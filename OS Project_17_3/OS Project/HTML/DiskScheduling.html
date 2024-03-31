@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling Algorithm</title>
+    <link rel="stylesheet" href="/CSS/DiskSchedulingStyle.css">
+
+</head>
+<body>
+    <div id="userInput">
+        <table>
+            <tr>
+                <td>Disk Size</td>
+                <td><input type="number" id="diskSize" placeholder="Enter Disk Size"></td>
+            </tr>
+            <tr>
+                <td>Intial Read/Write Head Position</td>
+                <td><input type="number" id="headPosition" placeholder="Enter R/W Head Position"></td>
+            </tr>
+            <tr>
+                <td>Disk Tracks access Request</td>
+                <td><input type="text" id="trackReq" placeholder="Ex. 1 2 3 4 [track number must be space seperated]"></td>
+            </tr>
+            <tr>
+                <td><button id="simulate">Start Simulation</button></td>
+            </tr>
+            
+        </table>
+
+    </div>
+    <div style="margin-left: 20px;">
+        <div>
+            <div id="red"></div> <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is not accessing Track</div>
+        </div>
+        <br>
+        <div>
+            <div id="green"></div> <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is accessing Track</div>
+        </div>
+       
+    </div>
+    <div id="clook"></div>
+    <div id="look"></div>
+    <script src="/Javascript/DiskSchedulingScript.js"></script>
+    
+</body>
+</html>

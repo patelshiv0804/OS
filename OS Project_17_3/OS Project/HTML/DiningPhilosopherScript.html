@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dining Philosopher Problem</title>
+  <link rel="stylesheet" href="/CSS/DiningPhilosopherStyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="flex-item">
+      <div id="p1">
+        <img id="philosopher1" class="philo" src="philosopher.png" alt="philosopher" ><br>P1
+      </div>
+      <div id="p2">
+        <img id="philosopher2"  class="philo" src="philosopher.png" alt="philosopher" ><br>P2
+      </div>
+      <div id="p3">
+        <img id="philosopher3"  class="philo" src="philosopher.png" alt="philosopher" ><br>P3
+      </div>
+      <div id="p4">
+        <img id="philosopher4"  class="philo" src="philosopher.png" alt="philosopher" ><br>P4
+      </div>
+      <div id="p5">
+        <img id="philosopher5"  class="philo" src="philosopher.png" alt="philosopher" ><br>P5  
+      </div>
+      
+     
+      <img id="table" src="dining.png" alt="dining table" width="400px" height="400px">
+      
+    </div>
+
+    <div class="flex-item">
+      
+      <br><br><br><br>
+      <center>
+        <h2>Enter Philosopher Sequences to Eat</h2>
+        <form id="sequenceForm">
+          <input type="number" name="philosopher1" min="1" max="5" required>
+          <input type="number" name="philosopher2" min="1" max="5" required>
+          <input type="number" name="philosopher3" min="1" max="5" required>
+          <input type="number" name="philosopher4" min="1" max="5" required>
+          <input type="number" name="philosopher5" min="1" max="5" required>
+          <br>
+          <button id="start">Start</button>
+          <button id="reset">Reset</button>
+        </form>
+      </center>
+      
+    </div>
+    <br>
+    
+  </div>
+  <br><br><br><br><br>
+  <center><div id="outputLines"></div></center>
+
+  <script src="/Javascript/DiningPhilosopherScript.js"></script>
+</body>
+</html>

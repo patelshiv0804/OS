@@ -1,0 +1,205 @@
+body {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    height: 100dvh;
+}
+
+* {
+    margin: 0;
+}
+
+.navbar {
+    background: #012846;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    /* height: 100vh; */
+    height: 50px;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    /* font-weight: 500; */
+    padding: 0 10px;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color: #216b8c;
+    ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+nav a:hover {
+    color: #9bdcff;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+
+.back-video {
+    /* width: 100vw; */
+    /* height: 100%; */
+    position: absolute;
+    right: 0;
+    /* bottom: 0; */
+    top: 0;
+    z-index: -1;
+    filter: brightness(0.5);
+    /* object-fit: contain; */
+
+}
+
+/* @media (min-aspect-ratio : 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio : 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+} */
+
+h1 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.LABEL_INPUT {
+    margin-top: 10PX;
+    font-size: 21PX;
+}
+
+input[type="number"] {
+    width: 100px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    background: linear-gradient(94.82deg,
+            #00192c 14.6%,
+            #003a67 55.34%,
+            #1868a7 79.26%,
+            #2774b2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    margin-top: 8px;
+}
+
+th {
+    background-color: transparent;
+}
+
+.gantt-chart {
+    display: flex;
+    /* border: 1px solid #ccc; */
+    margin-top: 20px;
+}
+
+.gantt-bar {
+    background: linear-gradient(94.82deg, #0b6464 14.6%, #58f3f3 55.34%, #4cccc1 79.26%, #387772);
+    /* background-color: #007bff; */
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30PX;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+#input table {
+    width: 50%;
+    margin-bottom: 20px;
+    /* Added margin-bottom */
+}
+
+.gantt-chart {
+    margin-top: 20px;
+    /* Added margin-top */
+}

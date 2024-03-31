@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+    <link rel="stylesheet" href="./frame-parent.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hammersmith One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="frame-parent">
+      <div class="frame-parent-child"></div>
+      <section class="frame-collection">
+        <div class="frame-container">
+          <div class="why-shortest-job-first-wrapper">
+            <div class="why-shortest-job-container">
+              <p class="why-shortest-job">Why Shortest job first?</p>
+            </div>
+          </div>
+          <div class="sjf-is-used">
+            SJF is used primarily to minimize the average waiting time of
+            processes, thus improving system performance. It is particularly
+            effective in scenarios where there's a mix of short and long
+            processes. By prioritizing shorter processes, SJF aims to optimize
+            system throughput and response time.
+          </div>
+        </div>
+      </section>
+      <section class="s-j-f-scheduling-frame">
+        <div class="frame-parent1">
+          <div class="shortest-job-first-wrapper">
+            <div class="shortest-job-first-container">
+              <p class="shortest-job-first3">Shortest job first</p>
+              <p class="blank-line">&nbsp;</p>
+            </div>
+          </div>
+          <div class="shortest-job-first-scheduling">
+            Shortest-Job-First Scheduling is said to be the best process
+            scheduling approach as it minimizes the waiting time of the other
+            processes awaiting their execution. It is also referred to as
+            Shortest-Job-Next owing to its characteristic of scheduling the job
+            with the minimum time as next. It is both pre-emptive and
+            non-preemptive.
+          </div>
+        </div>
+        <div class="disadvantages-frame">
+          <div class="frame-parent2">
+            <div class="characteristics-of-sjf-wrapper">
+              <div class="characteristics-of-sjf-container">
+                <p class="characteristics-of-sjf">characteristics of SJF</p>
+              </div>
+            </div>
+            <div class="it-suits-best-container">
+              <ul class="it-suits-best-in-batch-type-sy">
+                <li class="it-suits-best">
+                  It suits best in Batch-type Systems where the CPU time i.e,
+                  Burst Time, is known beforehand and process execution is not
+                  that critical.
+                </li>
+                <li class="it-is-associated">
+                  It is associated with each process as a time to be completed.
+                </li>
+                <li class="it-can-increase">
+                  It can increase output by offering a short process time, i.e
+                  the short processes are executed first.
+                </li>
+                <li class="since-the-jobs">
+                  Since the jobs that need less time are executed first, it also
+                  increases the throughput time.
+                </li>
+                <li>
+                  The algorithm works best when the arrival time for all
+                  processes is the same.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="button-node-parent">
+          <div class="button-node">
+            <div class="advantages-disadvantages-container">
+              <p class="advantages-disadvantages">Advantages & Disadvantages</p>
+            </div>
+          </div>
+          <div class="advantages-minimizes-container">
+            <p class="advantages">Advantages :</p>
+            <ul class="minimizes-average-waiting-time">
+              <li class="minimizes-average-waiting-time1">
+                <span class="minimizes-average-waiting"
+                  >Minimizes Average Waiting Time: SJF scheduling algorithm
+                  selects the process with the smallest execution time, leading
+                  to shorter waiting times for processes overall.</span
+                >
+              </li>
+              <li class="optimal-for-certain-workloads">
+                <span class="optimal-for-certain"
+                  >Optimal for Certain Workloads: In situations where there are
+                  mostly short processes mixed with a few long ones, SJF tends
+                  to perform very well, as it prioritizes short jobs, allowing
+                  them to complete quickly.</span
+                >
+              </li>
+              <li>
+                <span class="improves-system-throughput"
+                  >Improves System Throughput: By quickly executing short
+                  processes, SJF can increase the number of processes completed
+                  per unit time, enhancing overall system throughput.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="disadvantages-prediction-container">
+            <p class="disadvantages">Disadvantages :</p>
+            <ul class="prediction-issues-sjf-require">
+              <li class="prediction-issues-sjf-require1">
+                <span>
+                  <span class="prediction-issues-sjf"
+                    >Prediction Issues: SJF requires accurate estimation or
+                    knowledge of the execution time of each process, which might
+                    not always be available. If there's uncertainty in process
+                    execution times, it can lead to poor performance.</span
+                  >
+                </span>
+              </li>
+              <li class="possibility-of-starvation-lon">
+                <span>
+                  <span class="possibility-of-starvation"
+                    >Possibility of Starvation: Long processes may never get
+                    executed if short processes continually arrive, leading to
+                    starvation.</span
+                  >
+                </span>
+              </li>
+              <li>
+                <span>
+                  <span class="pre-emption-overhead-implemen"
+                    >Pre-emption Overhead: Implementing SJF with pre-emption
+                    (where a shorter job arrives while a longer job is
+                    executing) can introduce overhead due to frequent context
+                    switches</span
+                  >
+                  <span class="span">.</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="frame-parent3">
+          <div class="terminology-required-for-sjf-t-wrapper">
+            <div class="terminology-required-for-container">
+              <p class="terminology-required-for">
+                Terminology Required for SJF Table
+              </p>
+            </div>
+          </div>
+          <div class="arrival-time-the-container">
+            <ul class="arrival-time-the-time-at-whic">
+              <li class="arrival-time-the">
+                Arrival Time: The time at which a process arrives in the ready
+                queue for execution.
+              </li>
+              <li class="burst-time-the">
+                Burst Time: The amount of time a process requires for execution
+                from start to finish.
+              </li>
+              <li class="finish-time-the">
+                Finish Time: The time at which a process completes its
+                execution.
+              </li>
+              <li class="turnaround-time-the">
+                Turnaround Time: The total time taken by a process from arrival
+                to completion, including waiting time and execution time.
+              </li>
+            </ul>
+            <p class="turn-around-time">
+                Turn Around Time = Completion Time - Arrival Time
+            </p>
+            <ul class="waiting-time-the-total-time-a">
+              <li class="waiting-time-the">
+                Waiting Time: The total time a process spends waiting in the
+                ready queue before it gets CPU time for execution.
+              </li>
+            </ul>
+            <p class="waiting-time">
+                                                  Waiting Time = Turn around
+              Time - Burst Time
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="button-frame">
+        <button class="button">
+          <div class="button-child"></div>
+          <div class="simulate">Simulate</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

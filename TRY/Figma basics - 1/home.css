@@ -1,0 +1,362 @@
+
+.parent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    height: 333px;
+    width: 333px;
+    
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+}
+
+.parent1 .sub-parent1 {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.parent1 .father1 .SJF {
+    text-align: center;
+    
+}
+
+.SJF-button {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.sjf-p{
+    margin-top: 15px;
+   font-size: 22px;
+}
+
+.sub-parent1 .sjf-img {
+    height: 160px;
+    /* width: 260px; */
+}
+
+.btn2 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+
+
+
+.parent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    height: 333px;
+    width: 333px;
+   
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+}
+
+.parent2 .sub-parent2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parent2 .father2 .disk {
+    text-align: center;
+ 
+}
+
+.disk-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sub-parent2 .disk-img {
+    height: 160px;
+    width: 100%px;
+}
+
+.disk-p{
+     margin-top: 15px;
+    font-size: 22px;
+}
+
+.btn3 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+
+/* .parent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 333px;
+    width: 333px;
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+    margin-bottom: 23px; 
+}
+
+.parent1 .sub-parent1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parent1 .father1 .SJF {
+    text-align: center;
+}
+
+.SJF-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sub-parent1 .sjf-img {
+    height: 210px;
+    width: 260px;
+}
+
+.btn2 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.parent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 333px;
+    width: 333px;
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+ 
+}
+
+.parent2 .sub-parent2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parent2 .father2 .disk {
+    text-align: center;
+}
+
+.disk-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sub-parent2 .disk-img {
+    height: 160px;
+    width: 100%;
+}
+
+.disk-p {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.btn3 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+} */
+
+
+.parent3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    height: 333px;
+    width: 333px;
+   
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+}
+
+.parent3 .sub-parent3 {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.parent3 .father3 .dinning {
+    text-align: center;
+
+}
+
+.Dinning-button {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.sub-parent3 .dinning-img {
+    height: 160px;
+    width: 100%px;
+}
+
+.dinning-p{
+     margin-top: 30px;
+    font-size: 22px;
+}
+
+.btn4 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+
+
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    height: 333px;
+    width: 333px;
+    
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+}
+
+.sub-parent {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.fifo {
+    text-align: center;
+   
+}
+
+.fifo-button {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+p {
+    margin-top: 0px;
+    font-size: 22px;
+}
+.btn1 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.fifo-img {
+    height: 190px;
+}
+
+
+/* .parent3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 333px;
+    width: 333px;
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+    margin-bottom: 23px; 
+}
+
+.parent3 .sub-parent3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.parent3 .father3 .dinning {
+    text-align: center;
+}
+
+.dinning-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sub-parent3 .dinning-img {
+    height: 160px;
+    width: 100%;
+}
+
+.dinning-p {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.btn4 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 333px;
+    width: 333px;
+    background: linear-gradient(135deg, #1d3a4c 4%, #3c98c3 55.5%, #72ddfd 96.5%);
+    border-radius: 41px;
+    margin-bottom: 23px; 
+}
+
+.sub-parent {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fifo {
+    text-align: center;
+}
+
+.fifo-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+.btn1 {
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.fifo-img {
+    height: 210px;
+    width: 260px;
+} */
+
+
+
+.all-four{
+    display: flex;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    gap: 50px;
+}
+
+.second-half{
+    gap: 50px;
+    display: grid;
+}
+
+.first-half{
+    gap: 50px;
+    display: grid;
+}
+
+body {
+    background-color: #0f1035;
+}

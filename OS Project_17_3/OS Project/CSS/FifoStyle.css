@@ -1,0 +1,40 @@
+/* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  button {
+    padding: 4px 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .block-inner {
+    display: inline-block;
+  }
+  .page-entry {
+    margin-bottom: 10px;
+  }
+  .queue-status {
+    margin-top: 10px;
+  }
+  .queue-block {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }

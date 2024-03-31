@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scheduler Simulation</title>
+    <link rel="stylesheet" href="/CSS/SjfStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Process Scheduler Simulation</h1>
+        <label for="processes">Enter the number of processes:</label>
+        <input type="number" id="processes">
+        <div id="input"></div>
+        <div id="output" style="margin-top: 20px;"></div> <!-- Output div added with margin-top -->
+        <div class="button-group" style="margin-top: 20px;"> <!-- Button group margin-top adjusted -->
+            <button onclick="getInput()">Submit</button>
+            <button onclick="startSimulation()" disabled id="std">Start Simulation</button>
+            <button onclick="clearData()">Clear Data</button>
+        </div>
+        <br>
+    </div>
+
+    <script src="/Javascript/SjfScript.js"></script>
+</body>
+</html>

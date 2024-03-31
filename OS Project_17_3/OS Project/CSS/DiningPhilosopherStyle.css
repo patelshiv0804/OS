@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    padding-top: 120px;
+    justify-content: space-between;
+    
+  }
+  input[type="number"] {
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .message {
+    text-align: justify;
+}
+.philo{
+  width: 90px;
+  height: 120px;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+#p1 { 
+  position: absolute;
+  top: 18px; 
+  left: 385px; 
+}
+#p2 {
+  position: absolute;
+  top: 230px; 
+  left: 600px; 
+ 
+}
+#p3 {
+  position: absolute;
+  top: 455px; 
+  left: 560px;
+  
+}
+#p4 { 
+  position: absolute;
+  top: 455px; 
+  left: 215px; 
+  
+}
+#p5 { 
+  position: absolute;
+  top: 230px; 
+  left: 170px; 
+  
+}
+
+
+.flex-item {
+  /* flex: 1; */
+ 
+  padding: 20px; 
+  margin: 0 10px; 
+  text-align: center;
+}
+#outputLines {
+  text-align: center;
+}

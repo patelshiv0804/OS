@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFO Page Replacement Simulator</title>
+<link rel="stylesheet" href="/CSS/FifoStyle.css">
+</head>
+<body>
+<div class="container">
+  <h1>FIFO Page Replacement Simulator</h1>
+  <label for="frameSize">Enter number of Frames in main memory:</label>
+  <input type="number" id="frameSize">
+  <div class="page-entry">
+    <br>
+    <input type="number" id="pageNumber" placeholder="Enter page number" style="width: 300px;">
+    <button onclick="simulateFIFO()">Access Page</button>
+    <button onclick="startSimulation()">Clear</button>
+  </div>
+  
+  <div id="simulationResults"></div>
+</div>
+
+<script src="/Javascript/FifoScript.js">
+  // JavaScript code
+ 
+</script>
+</body>
+</html>

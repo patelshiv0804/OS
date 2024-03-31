@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFO Page Replacement Simulator</title>
+  <link rel="stylesheet" href="FifoStyle.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="bg_2.mp4" type="video/mp4">
+  </video>
+  <div class="navbar">
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="CARD.HTML">About</a>
+      <a href="HOME.HTML">Algorithms</a>
+      <a href="Sjf.html">SIMULATOR</a>
+    </nav>
+  </div>
+  <div class="container">
+    <h1>FIFO Page Replacement Simulator</h1>
+    <div class="second">
+      <label for="frameSize" class="frame">Enter number of Frames in main memory:</label>
+      <input type="number" id="frameSize">
+    </div>
+    <div class="page-entry">
+      <br>
+      <input type="number" id="pageNumber" placeholder="Enter page number" style="width: 300px;">
+      <button onclick="simulateFIFO()">Access Page</button>
+      <button onclick="startSimulation()">Clear</button>
+    </div>
+
+    <div id="simulationResults"></div>
+  </div>
+
+  <script src="FifoScript.js">
+    // JavaScript code
+
+  </script>
+</body>
+
+</html>

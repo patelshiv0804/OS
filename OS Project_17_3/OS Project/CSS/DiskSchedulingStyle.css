@@ -1,0 +1,67 @@
+/* Disk Scheduling Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#userInput {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="number"],
+input[type="text"],
+button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#clook,
+#look {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#simulate{
+    width: max-content;
+    
+}
+#red{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+#green{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
