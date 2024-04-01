@@ -47,6 +47,35 @@ class Philosopher {
         const message = this.name + " Eating..";
         appendToOutput(message);
         const philosopherImage = document.getElementById("philosopher" + this.name[12]);
+        
+        if(this.name === "Philosopher 1:- ")
+        {
+            
+            p1Msg.innerText = "Eating...";
+        }
+        else if(this.name === "Philosopher 2:- ")
+        {
+            
+            p2Msg.innerText = "Eating...";
+        }
+        else if(this.name === "Philosopher 3:- ")
+        {
+            
+            p3Msg.innerText = "Eating...";
+        }
+        else if(this.name === "Philosopher 4:- ")
+        {
+           
+            p4Msg.innerText = "Eating...";
+        }
+        else
+        {
+           
+            p5Msg.innerText = "Eating...";
+        }
+
+        
+        
         console.log(this.name);
         console.log(philosopherImage);
         philosopherImage.style.transform = "scale(1.2)"; 
@@ -56,6 +85,32 @@ class Philosopher {
     }
     async think() {
         const message = this.name + " Thinking..";
+        if(this.name === "Philosopher 1:- ")
+        {
+            
+            p1Msg.innerText = "Thinking...";
+        }
+        else if(this.name === "Philosopher 2:- ")
+        {
+            
+            p2Msg.innerText = "Thinking...";
+        }
+        else if(this.name === "Philosopher 3:- ")
+        {
+            
+            p3Msg.innerText = "Thinking...";
+        }
+        else if(this.name === "Philosopher 4:- ")
+        {
+            
+            p4Msg.innerText = "Thinking...";
+        }
+        else
+        {
+           
+            p5Msg.innerText = "Thinking...";
+        }
+
         appendToOutput(message);
         
         await new Promise(resolve => (setTimeout(resolve, 3000))); 
@@ -122,13 +177,24 @@ function appendToOutput(message) {
     outputLines.appendChild(document.createElement("br"));
 }
 
+const p1Msg = document.getElementById("p1Msg");
+const p2Msg = document.getElementById("p2Msg");
+const p3Msg = document.getElementById("p3Msg");
+const p4Msg = document.getElementById("p4Msg");
+const p5Msg = document.getElementById("p5Msg");
 
 const inputVal = document.querySelectorAll("input");
 let btnStart = document.querySelector("#start");
 let btnReset = document.querySelector("#reset");
 btnStart.addEventListener("click", (evt) => {
     evt.preventDefault();
-    
+
+    p1Msg.innerText = "Thinking...";
+    p2Msg.innerText = "Thinking...";
+    p3Msg.innerText = "Thinking...";
+    p4Msg.innerText = "Thinking...";
+    p5Msg.innerText = "Thinking...";
+ 
     const sequence = [];
     for (let i = 0; i < inputVal.length; i++) {
         sequence.push(parseInt(inputVal[i].value));
