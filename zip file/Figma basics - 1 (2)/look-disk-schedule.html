@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./look-disk-schedule.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hammersmith One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="look-disk-schedule">
+      <div class="look-disk-schedule-child"></div>
+      <section class="look-disk-wrapper">
+        <div class="look-disk">
+          <div class="look-algorithm">
+            <div class="look-disk-scheduling-container">
+              <p class="look-disk-scheduling">Look disk scheduling</p>
+            </div>
+          </div>
+          <div class="the-look-algorithm-container">
+            <p class="the-look-algorithm">
+              The LOOK algorithm is a disk scheduling algorithm that scans the
+              disk from the current position of the disk arm to the last request
+              in one direction and then moves back to the first request in the
+              opposite direction.
+            </p>
+            <p class="the-look-algorithm1">
+              The LOOK algorithm is designed to reduce the seek time by
+              minimizing the distance the disk arm has to travel to service a
+              request. The algorithm schedules the requests in such a way that
+              the disk arm moves continuously in one direction without any
+              backtracking, which indirectly improves performance by maximizing
+              throughput and reducing the total time required to access and
+              retrieve data from the disk.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="lookfunctionality-parent">
+        <div class="lookfunctionality">
+          <div class="look-functionality">
+            <div class="functionality-wrapper">
+              <div class="functionality">
+                <p class="functionality1">Functionality</p>
+                <p class="blank-line2">&nbsp;</p>
+              </div>
+            </div>
+            <div class="look-aims-to">
+              LOOK aims to minimize disk arm movement and reduce seek time by
+              optimizing the order in which disk I/O requests are serviced. It
+              achieves this by scanning the disk in one direction until it
+              encounters the last request in that direction, and then reverses
+              direction without necessarily reaching the end of the disk. This
+              approach helps in reducing the average seek time compared to
+              simpler algorithms like First-Come, First-Served (FCFS).
+            </div>
+          </div>
+        </div>
+        <div class="lookfunctionality1">
+          <div class="look-working">
+            <div class="initialization">
+              <div class="how-algorithm-work2">How Algorithm work ?</div>
+            </div>
+            <div class="the-disk-scheduler-container">
+              <ul class="the-disk-scheduler-maintains-a">
+                <li class="the-disk-scheduler">
+                  The disk scheduler maintains a queue of pending disk I/O
+                  requests.
+                </li>
+                <li class="the-disk-arm">
+                  The disk arm starts servicing requests from its current
+                  position.
+                </li>
+                <li class="it-moves-in">
+                  It moves in one direction (either inward or outward) until it
+                  reaches the last request in that direction.
+                </li>
+                <li class="upon-reaching-the">
+                  Upon reaching the last request, the disk arm reverses its
+                  direction without necessarily reaching the edge of the disk.
+                </li>
+                <li class="it-continues-servicing">
+                  It continues servicing requests in the reversed direction
+                  until there are no more pending requests.
+                </li>
+                <li>
+                  Once all requests are serviced, the disk arm remains idle
+                  until new requests arrive.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="look-adv-disadv">
+          <div class="request">
+            <div class="advantages-disadvantages-container2">
+              <p class="advantages-disadvantages2">
+                Advantages & Disadvantages
+              </p>
+            </div>
+          </div>
+          <div class="advantages-reduced-container">
+            <p class="advantages2">Advantages :</p>
+            <ul class="reduced-seek-time-look-optimi">
+              <li class="reduced-seek-time-look-optimi1">
+                <span class="reduced-seek-time"
+                  >Reduced Seek Time: LOOK optimizes disk arm movement, leading
+                  to shorter seek times and faster disk I/O operations.</span
+                >
+              </li>
+              <li class="fairness-it-ensures-fairness">
+                <span class="fairness-it-ensures"
+                  >Fairness: It ensures fairness in servicing disk requests by
+                  preventing starvation of requests that are located far from
+                  the disk arm's current position.</span
+                >
+              </li>
+              <li>
+                <span class="simplicity-look-is"
+                  >Simplicity: LOOK is relatively simpler to implement compared
+                  to more complex algorithms like SCAN or C-SCAN.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="disadvantages-increased-container">
+            <p class="disadvantages2">Disadvantages :</p>
+            <ul class="increased-variance-there-migh">
+              <li class="increased-variance-there-migh1">
+                <span class="increased-variance-there"
+                  >Increased Variance: There might be an increased variance in
+                  service times for requests located at the boundary where the
+                  disk arm reverses direction, potentially leading to longer
+                  wait times.</span
+                >
+              </li>
+              <li>
+                <span class="suboptimal-performance-in"
+                  >Suboptimal Performance: In scenarios with requests spread
+                  across the entire disk, other algorithms like Shortest Seek
+                  Time First (SSTF) might offer better performance.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clook-disk">
+          <div class="c-look-disk-scheduling-wrapper">
+            <div class="c-look-disk-scheduling">C-look disk scheduling</div>
+          </div>
+          <div class="the-clook-circular">
+            The CLOOK (Circular LOOK) algorithm is a disk scheduling algorithm
+            used in operating systems to optimize the movement of the disk arm,
+            reducing seek time and improving disk I/O performance. It's a
+            variation of the LOOK algorithm, which scans the disk in one
+            direction until it reaches the end and then reverses direction,
+            scanning back to the start. The CLOOK algorithm, however, operates
+            only in one direction, providing better performance in certain
+            scenarios.
+          </div>
+        </div>
+        <div class="clook-functionality">
+          <div class="functionality-container">
+            <div class="functionality2">
+              <p class="functionality3">Functionality</p>
+              <p class="blank-line3">&nbsp;</p>
+            </div>
+          </div>
+          <div class="c-look-circular-look-container">
+            <p class="c-look-circular-look">
+              C-LOOK (Circular LOOK) is a disk scheduling algorithm that aims to
+              minimize disk arm movement and reduce seek time by optimizing the
+              order in which disk I/O requests are serviced. It operates
+              similarly to LOOK but with a circular scanning pattern, hence the
+              name "C-LOOK."
+            </p>
+            <p class="c-look-starts-servicing">
+              C-LOOK starts servicing requests at one end of the disk and scans
+              in one direction until it encounters the last request in that
+              direction. Instead of reversing direction immediately, as in LOOK,
+              C-LOOK reverses direction only after reaching the end of the disk.
+              This circular pattern avoids unnecessary arm movement to the
+              beginning of the disk, resulting in reduced seek time.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="clook-working">
+        <div class="initialization1">
+          <div class="how-algorithm-work3">How Algorithm work ?</div>
+        </div>
+        <div class="initialization-the-disk-container">
+          <ul class="initialization-the-disk-arm-s">
+            <li class="initialization-the-disk">
+              Initialization: The disk arm starts at a particular position on
+              the disk.
+            </li>
+            <li class="scheduling-request-when">
+              Scheduling Request: When a disk I/O request arrives, the algorithm
+              services the requests in a specific direction (usually from lower
+              to higher disk cylinder numbers).
+            </li>
+            <li class="scan-the-algorithm">
+              Scan: The algorithm scans sequentially in the chosen direction
+              until it reaches the last request in that direction or the end of
+              the disk.
+            </li>
+            <li class="back-to-the">
+              Back to the Beginning: Once reaching the last request or end of
+              the disk, instead of reversing direction, the disk arm jumps back
+              to the beginning of the disk (hence the "circular" aspect of the
+              algorithm) and continues serving requests until reaching the
+              previous position of the disk arm.
+            </li>
+            <li>
+              Completion: After servicing all requests between the starting
+              position and the current position of the disk arm, the algorithm
+              finishes.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clook-adv-disadv-wrapper">
+        <div class="clook-adv-disadv">
+          <div class="request1">
+            <div class="advantages-disadvantages-container3">
+              <p class="advantages-disadvantages3">
+                Advantages & Disadvantages
+              </p>
+            </div>
+          </div>
+          <div class="advantages-reduced-container1">
+            <p class="advantages3">Advantages :</p>
+            <ul class="reduced-seek-time-c-look-redu">
+              <li class="reduced-seek-time-c-look-redu1">
+                <span class="reduced-seek-time1"
+                  >Reduced Seek Time: C-LOOK reduces seek time by optimizing
+                  disk arm movement and minimizing unnecessary traversal of the
+                  disk.</span
+                >
+              </li>
+              <li class="improved-throughput-by-minimi">
+                <span class="improved-throughput-by"
+                  >Improved Throughput: By minimizing seek time and maximizing
+                  sequential access to requests, C-LOOK can improve the overall
+                  throughput of disk operations.</span
+                >
+              </li>
+              <li class="simple-implementation-c-look">
+                <span class="simple-implementation-c-look1"
+                  >Simple Implementation: C-LOOK is relatively simple to
+                  implement compared to more complex disk scheduling
+                  algorithms.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="disadvantages-starvation-container">
+            <p class="disadvantages3">Disadvantages :</p>
+            <ol class="starvation-requests-located">
+              <li class="starvation-requests-located1">
+                <span class="starvation-requests"
+                  >Starvation: Requests located at the ends of the disk may
+                  experience longer wait times if there is a continuous stream
+                  of requests in one direction, leading to potential starvation
+                  issues for certain requests.</span
+                >
+              </li>
+              <li class="inefficiency-in-some-cases-c">
+                <span class="inefficiency-in-some"
+                  >Inefficiency in Some Cases: C-LOOK may not be optimal for
+                  certain workload patterns, especially if there are frequent
+                  requests scattered across the disk surface.</span
+                >
+              </li>
+              <li>
+                <span class="no-consideration-of"
+                  >No Consideration of Request Priority: C-LOOK does not
+                  consider the priority of requests, which can be a limitation
+                  in systems where certain requests need to be served with
+                  higher priority.</span
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <div class="disk-btn-wrapper">
+        <button class="disk-btn">
+          <div class="disk-btn-child"></div>
+          <div class="simulate3">Simulate</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
