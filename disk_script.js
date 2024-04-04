@@ -60,7 +60,7 @@ const drawClookMap = (diskSize, headPos, seekSequenceClook, cLookSeekOpr, clookO
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Draw horizontal lines for disk tracks
-    ctx.strokeStyle = 'black'; // Changed line color to black
+    ctx.strokeStyle = 'white'; // Changed line color to black
     ctx.lineWidth = 2;
     for (let i = 0; i < clookOutArr.length; i++) {
         const x = 0; // Start the line from the left edge of the canvas
@@ -84,7 +84,7 @@ const drawClookMap = (diskSize, headPos, seekSequenceClook, cLookSeekOpr, clookO
         }
         ctx.fill();
         // Draw text label
-        ctx.fillStyle = 'blue'; // Changed text color to blue
+        ctx.fillStyle = 'white'; // Changed text color to blue
         ctx.fillText(clookOutArr[i].toString(), x + 10, y - 10); // Adjusted text position
     }
 
@@ -96,9 +96,9 @@ const drawClookMap = (diskSize, headPos, seekSequenceClook, cLookSeekOpr, clookO
     infoDiv.className = 'algorithm-info';
     infoDiv.innerHTML = `
         <h2>Clook Disk Scheduling</h2>
-        <p>Initial Head Position : ${headPos}</p>
-        <p>Seek Operation Count: ${cLookSeekOpr}</p>
-        <p>Seek Sequence: ${seekSequenceClook.join(', ')}</p>
+        <p class="clook-info">Initial Head Position : ${headPos}</p>
+        <p class="clook-info">Seek Operation Count: ${cLookSeekOpr}</p>
+        <p class= "clook-info">Seek Sequence: ${seekSequenceClook.join(', ')}</p>
     `;
     clookMap.appendChild(infoDiv);
 };
@@ -113,7 +113,7 @@ const drawLookMap = (diskSize, headPos, seekSequenceLook, lookSeekOpr) => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Draw horizontal lines for disk tracks
-    ctx.strokeStyle = 'black'; // Changed line color to black
+    ctx.strokeStyle = 'white'; // Changed line color to black
     ctx.lineWidth = 2;
     for (let i = 0; i < seekSequenceLook.length; i++) {
         const x = 0; // Start the line from the left edge of the canvas
@@ -133,7 +133,7 @@ const drawLookMap = (diskSize, headPos, seekSequenceLook, lookSeekOpr) => {
         ctx.fillStyle = 'green'; // Changed circle color to green
         ctx.fill();
         // Draw text label
-        ctx.fillStyle = 'blue'; // Changed text color to blue
+        ctx.fillStyle = 'white'; // Changed text color to blue
         ctx.fillText(seekSequenceLook[i].toString(), x + 10, y - 10); // Adjusted text position
     }
 
@@ -145,9 +145,9 @@ const drawLookMap = (diskSize, headPos, seekSequenceLook, lookSeekOpr) => {
     infoDiv.className = 'algorithm-info';
     infoDiv.innerHTML = `
         <h2>Look Disk Scheduling</h2>
-        <p>Initial Head Position : ${headPos}</p>
-        <p>Seek Operation Count: ${lookSeekOpr}</p>
-        <p>Seek Sequence: ${seekSequenceLook.join(', ')}</p>
+        <p class="look-info">Initial Head Position : ${headPos}</p>
+        <p class="look-info">Seek Operation Count: ${lookSeekOpr}</p>
+        <p class="look-info">Seek Sequence: ${seekSequenceLook.join(', ')}</p>
     `;
     lookMap.appendChild(infoDiv);
 };

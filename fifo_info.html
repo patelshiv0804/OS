@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+    <link rel="stylesheet" href="fifo_info.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hammersmith One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="rectangle-root">
+      <div class="frame-child6"></div>
+      <section class="why-fifo">
+        <div class="page-replacement">
+          <div class="why-fifo-page-container">
+            <p class="why-fifo-page">Why FIFO page replacement?</p>
+          </div>
+        </div>
+        <div class="page-replacement-is">
+          Page replacement is used to manage the limited physical memory
+          resources efficiently. In systems with virtual memory, not all pages
+          of a process need to be in memory at once. When the system encounters
+          a page fault, it needs to decide which page to replace in order to
+          bring in the required page from secondary storage. This decision is
+          based on various page replacement algorithms.
+        </div>
+      </section>
+      <section class="f-i-f-o-terminology">
+        <div class="f-i-f-o-simple">
+          <div class="fifo">
+            <div class="f-i-f-o-page-replace">
+              <div class="fifo-page-replacement">FIFO page replacement</div>
+            </div>
+            <div class="fifo-which-is-container">
+              <p class="fifo-which-is">
+                FIFO which is also known as First In First Out is one of the
+                types of page replacement algorithm. The FIFO algorithm is used
+                in the paging method for memory management in an operating
+                system that decides which existing page needs to be replaced in
+                the queue.
+              </p>
+              <p class="fifo-algorithm-replaces">
+                FIFO algorithm replaces the oldest (First) page which has been
+                present for the longest time in the main memory.
+              </p>
+              <p class="in-simple-words">
+                In simple words, When a new page comes in from secondary memory
+                to main memory, It selects the front of the queue which is the
+                oldest page present, and removes it.
+              </p>
+              <p class="q-why-do">Q) Why do we need to swap the pages?</p>
+              <p class="since-we-have">
+                since we have a fixed number of frames and all the processes
+                cannot be stored in the
+              </p>
+              <p class="main-memory-at">
+                main memory at a single time we use page replacement algorithms
+                to store pages of
+              </p>
+              <p class="a-process-instead">
+                a process instead of the whole process.
+              </p>
+            </div>
+          </div>
+          <div class="terminology">
+            <div class="terminology-required-for-container1">
+              <p class="terminology-required-for1">
+                Terminology Required for page replacement
+              </p>
+            </div>
+            <div class="page-fault-it-container">
+              <ul class="page-fault-it-occurs-when-the">
+                <li class="page-fault-it">
+                  Page Fault: It occurs when the requested page is not found in
+                  memory and needs to be brought in from secondary storage (like
+                  disk) into main memory.
+                </li>
+                <li class="page-hit-it">
+                  Page Hit: It happens when the requested page is found in
+                  memory, thus no need to retrieve it from secondary storage.
+                </li>
+                <li>
+                  Page Replacement: This is the process of selecting a victim
+                  page from memory when a new page needs to be brought in. The
+                  victim page is then replaced with the new page.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="fifo-working">
+            <div class="how-algorithm-work-wrapper">
+              <div class="how-algorithm-work">How Algorithm work ?</div>
+            </div>
+            <div class="maintaining-a-list-container">
+              <p class="blank-line1">&nbsp;</p>
+              <ul class="maintaining-a-list-of-pages-t">
+                <li class="maintaining-a-list">
+                  Maintaining a List of Pages: The operating system keeps track
+                  of all pages currently residing in the memory. This list
+                  essentially serves as a queue, with the oldest pages at the
+                  front (head) of the queue and the newest at the back (tail).
+                </li>
+                <li class="bringing-in-a">
+                  Bringing in a New Page: When a new page needs to be loaded
+                  into memory from the secondary storage (such as the hard
+                  disk), the operating system checks if there is space available
+                  in the physical memory. If there is available space, the new
+                  page is loaded into memory. However, if the memory is already
+                  full, a page replacement decision needs to be made.
+                </li>
+                <li class="handling-page-fault">
+                  Handling Page Fault: In case of a page fault (when the
+                  requested page is not found in memory), the operating system
+                  selects a page to evict from the memory to make room for the
+                  incoming page. In FIFO, the decision is straightforward: the
+                  oldest page in memory, which is at the head of the list, is
+                  selected for replacement.
+                </li>
+                <li class="removing-the-oldest">
+                  Removing the Oldest Page: The page at the head of the list,
+                  which is the oldest page in memory, is removed to make space
+                  for the new page. This removal is performed regardless of the
+                  importance or frequency of use of the evicted page.
+                </li>
+                <li class="adding-the-new">
+                  Adding the New Page: Once the oldest page is removed, the new
+                  page is added to the memory and placed at the tail of the
+                  list, signifying it as the newest addition to the memory.
+                </li>
+                <li>
+                  The FIFO algorithm operates on a simple principle: the page
+                  that has been in memory the longest is the first to be
+                  replaced when a new page needs to be brought in.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="fifo-adv-disadv">
+          <div class="f-i-f-o-simulation">
+            <div class="advantages-disadvantages-container1">
+              <p class="advantages-disadvantages1">
+                Advantages & Disadvantages
+              </p>
+            </div>
+          </div>
+          <div class="advantages-simplicity-container">
+            <p class="advantages1">Advantages :</p>
+            <ul class="simplicity-fifo-is-one-of-the">
+              <li class="simplicity-fifo-is-one-of-the1">
+                <span class="simplicity-fifo-is"
+                  >Simplicity: FIFO is one of the simplest page replacement
+                  algorithms to implement.</span
+                >
+              </li>
+              <li>
+                <span class="fairness-it-provides"
+                  >Fairness: It provides a fair treatment to all pages, as it
+                  replaces the oldest page first, regardless of its access
+                  frequency or importance..</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="disadvantages-beladys-container">
+            <p class="disadvantages1">Disadvantages :</p>
+            <ul class="beladys-anomaly-fifo-can-suf">
+              <li class="beladys-anomaly-fifo-can-suf1">
+                <span class="beladys-anomaly-fifo"
+                  >Belady's Anomaly: FIFO can suffer from Belady's Anomaly,
+                  which means increasing the number of frames might increase the
+                  number of page faults. This is contrary to intuition and
+                  against the principle of optimality.</span
+                >
+              </li>
+              <li class="poor-performance-fifo-may-not">
+                <span class="poor-performance-fifo"
+                  >Poor Performance: FIFO may not always provide the best
+                  performance in terms of minimizing page faults, especially if
+                  the program's access pattern doesn't align well with FIFO's
+                  replacement strategy.</span
+                >
+              </li>
+              <li>
+                <span class="doesnt-consider-page"
+                  >Doesn't Consider Page Access Frequency: FIFO doesn't take
+                  into account how frequently pages are accessed. It might
+                  replace a frequently used page just because it's the oldest,
+                  leading to unnecessary page faults.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="f-i-f-o-technical">
+        <button class="button1">
+          <div class="button-item"></div>
+          <div class="simulate1">Simulate</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

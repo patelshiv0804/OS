@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+    <link rel="stylesheet" href="dinning_info.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hammersmith One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="dinning-rectangle-parent">
+      <div class="dinning-rectangle"></div>
+      <section class="dinning-philosopher-wrapper">
+        <div class="dinning-philosopher2">
+          <div class="what-is-dining-philosophers-p-wrapper">
+            <h1 class="what-is-dining">
+              What is Dining Philosopher’s problem ?
+            </h1>
+          </div>
+          <div class="the-dining-philosophers-container">
+            <p class="the-dining-philosophers">
+              The Dining Philosophers Problem is a classic synchronization
+              problem often used in computer science to illustrate the
+              challenges of resource allocation and concurrent programming. The
+              problem is formulated as follows:
+            </p>
+            <ul class="there-are-n-philosophers-sitti">
+              <li class="there-are-n">
+                There are N philosophers sitting around a circular dining table.
+                Each philosopher spends their time thinking and eating. There is
+                one chopstick between each pair of adjacent philosophers, and a
+                philosopher needs two chopsticks to eat. The challenge is to
+                design a scheme for the philosophers to pick up and put down
+                chopsticks in a way that prevents deadlock (where no philosopher
+                can proceed because they are all waiting for a chopstick held by
+                another) and avoids starvation (where a philosopher may never
+                get to eat).
+              </li>
+              <li>
+                Several strategies exist to solve the Dining Philosophers
+                problem, including using different algorithms like the resource
+                hierarchy solution, the arbitrator or waiter solution, or using
+                techniques like deadlock avoidance or prevention. Each solution
+                aims to ensure that ilosopher’s can eat without getting into
+                deadlock or starving while maintaining concurrency.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main-challenges-parent">
+        <div class="main-challenges">
+          <div class="main-challenges-in-dinning-phi-wrapper">
+            <h1 class="main-challenges-in">
+              Main challenges in dinning philosopher
+            </h1>
+          </div>
+          <div class="the-main-challenge">
+            The main challenge in the Dining Philosophers problem is to design a
+            solution that prevents deadlock, starvation, and ensures fair
+            resource allocation. Deadlock can occur when each philosopher picks
+            up one chopstick and waits indefinitely for the other one,
+            effectively blocking each other. Starvation can occur if a
+            philosopher is unable to acquire both chopsticks while others keep
+            acquiring and releasing chopsticks in a manner that prevents the
+            starving philosopher from ever eating.
+          </div>
+        </div>
+        <div class="problem">
+          <div class="dining-philosophers-problem-i-wrapper">
+            <h1 class="dining-philosophers-problem">
+              Dining Philosopher’s problem include
+            </h1>
+          </div>
+          <div class="deadlock-this-occurs-container">
+            <ul class="deadlock-this-occurs-when-eac">
+              <li class="deadlock-this-occurs">
+                Deadlock: This occurs when each philosopher picks up one
+                chopstick and waits indefinitely for the other chopstick,
+                leading to a situation where no philosopher can proceed with
+                eating, and the system remains in a deadlock state.
+              </li>
+              <li class="starvation-even-without">
+                Starvation: Even without deadlock, there's a risk of starvation
+                where a philosopher may be indefinitely prevented from accessing
+                the chopsticks and thus unable to eat, while others keep
+                acquiring the resources.
+              </li>
+              <li>
+                Concurrency control: Ensuring that multiple processes
+                (philosophers) can access shared resources (chopsticks) safely
+                and efficiently is a challenge. This requires proper
+                synchronization mechanisms to prevent issues like deadlock and
+                starvation.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="how-to-solve">
+          <div class="how-we-can-solve-it-wrapper">
+            <h1 class="how-we-can">How we can solve it?</h1>
+          </div>
+          <div class="mutexes-or-locks-container">
+            <ul class="mutexes-or-locks-use-mutexes">
+              <li class="mutexes-or-locks">
+                Mutexes or Locks: Use mutexes or locks to represent each
+                chopstick. Philosophers must acquire both mutexes (representing
+                both chopsticks) before they can start eating. This ensures that
+                only one philosopher can use a chopstick at a time.
+              </li>
+              <li class="semaphore-solution-use">
+                Semaphore Solution: Use semaphores to control access to the
+                chopsticks. Semaphores keep track of the number of available
+                chopsticks. Philosophers must acquire both semaphores
+                (representing both chopsticks) before they can eat, and release
+                them when done.
+              </li>
+              <li class="resource-hierarchy-assign">
+                Resource Hierarchy: Assign a numerical value to each chopstick
+                and establish a hierarchy. Philosophers are required to pick up
+                the lower-numbered chopstick first before attempting to pick up
+                the higher-numbered one. This prevents circular waiting and
+                deadlock.
+              </li>
+              <li class="asymmetric-solution-introduce">
+                Asymmetric Solution: Introduce a solution where one philosopher
+                picks up the right chopstick first and the other picks up the
+                left one first. This breaks the symmetry and prevents deadlock.
+              </li>
+              <li>
+                Chandy/Misra Solution: Use an algorithm where a philosopher must
+                request permission from a neighbour before picking up both
+                chopsticks. This ensures that at least one philosopher can eat
+                at any given time, preventing deadlock.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dinning-working">
+          <div class="how-algorithm-work-container">
+            <h1 class="how-algorithm-work1">How Algorithm work ?</h1>
+          </div>
+          <div class="initially-all-philosophers-container">
+            <ul class="initially-all-philosophers-ar">
+              <li class="initially-all-philosophers">
+                Initially, all philosophers are in the thinking state.
+              </li>
+              <li class="when-a-philosopher">
+                When a philosopher gets hungry:
+              </li>
+            </ul>
+            <p class="a-for-philosophers">
+              a. For philosophers other than the last one, wait on the left fork
+              and then on the right fork.
+            </p>
+            <p class="b-for-the">
+              b. For the last philosopher, wait on the right fork first, and
+              then on the left fork.
+            </p>
+            <p class="c-if-both">
+              c. If both forks are available, allocate them to the philosopher;
+              otherwise, the philosopher waits.
+            </p>
+            <ul class="once-both-forks-are-acquired">
+              <li class="once-both-forks">
+                Once both forks are acquired, the philosopher starts eating.
+              </li>
+              <li class="after-eating-the">
+                After eating, the philosopher releases both forks.
+              </li>
+              <li>
+                To prevent a deadlock when all philosophers get hungry
+                simultaneously, the last philosopher tries to acquire the right
+                fork first before attempting to acquire the left fork. This way,
+                at least one philosopher can acquire both forks and start
+                eating, preventing a deadlock.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="dinning-btn-wrapper">
+        <button class="dinning-btn">
+          <div class="dinning-btn-child"></div>
+          <div class="simulate2">Simulate</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

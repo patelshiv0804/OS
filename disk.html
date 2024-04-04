@@ -10,40 +10,59 @@
 </head>
 
 <body>
-    <div id="userInput">
+    <div class="outer-container">
+        <div class="navbar">
+            <nav>
+                <a href="homepage.html">Home</a>
+                <a href="CARD.HTML">About</a>
+                <a href="HOME.HTML">Algorithms</a>
+                <a href="Sjf.html">SIMULATOR</a>
+            </nav>
+        </div>
+        <video autoplay muted loop class="back-video">
+            <source src="bg_2.mp4" type="video/mp4">
+        </video>
+        <div id="userInput">
+            <div class="size">
+                <p>Disk Size:</p>
+                <p class="disk_size"><input type="number" id="diskSize" placeholder="Enter Disk Size"></p>
+            </div>
+            <div class="position">
+                <p>Intial Read/Write Head Position:</p>
+                <p class="head_position"><input type="number" id="headPosition" placeholder="Enter R/W Head Position">
+                </p>
+            </div>
+            <div class="track">
+                <p>Disk Tracks access Request:</p>
+                <p class="track_req"><input type="text" id="trackReq"
+                        placeholder="Ex. 1 2 3 4 [track number must be space seperated]"></p>
+            </div>
+            <div class="btn">
+                <p><button id="simulate">Start Simulation</button></p>
+            </div>
+        </div>
 
-        <div class="size">
-            <p>Disk Size:</p>
-            <p><input type="number" id="diskSize" placeholder="Enter Disk Size"></p>
+
+        <div class="info">
+            <div class="red">
+                <div id="red"></div>
+                <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is not accessing Track
+                </div>
+            </div>
+            <br>
+            <div class="green">
+                <div id="green"></div>
+                <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is accessing Track</div>
+            </div>
+
         </div>
-        <div class="position">
-            <p>Intial Read/Write Head Position:</p>
-            <p><input type="number" id="headPosition" placeholder="Enter R/W Head Position"></p>
+
+        <div class="graph">
+            <div id="clook"></div>
+            <div id="look"></div>
         </div>
-        <div class="track">
-            <p>Disk Tracks access Request:</p>
-            <p><input type="text" id="trackReq" placeholder="Ex. 1 2 3 4 [track number must be space seperated]"></p>
-        </div>
-        <div class="btn">
-            <p><button id="simulate">Start Simulation</button></p>
-        </div>
+
     </div>
-
-    
-    <div style="margin-left: 20px;">
-        <div>
-            <div id="red"></div>
-            <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is not accessing Track</div>
-        </div>
-        <br>
-        <div>
-            <div id="green"></div>
-            <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is accessing Track</div>
-        </div>
-
-    </div>
-    <div id="clook"></div>
-    <div id="look"></div>
     <script src="disk_script.js"></script>
 
 </body>

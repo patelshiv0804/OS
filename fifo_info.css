@@ -1,0 +1,513 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-hammersmith-one: "Hammersmith One";
+  
+    /* font sizes */
+    --font-size-sm: 14px;
+    --font-size-5xl: 24px;
+    --font-size-lgi: 19px;
+    --font-size-17xl: 36px;
+    --font-size-3xl: 22px;
+    --font-size-10xl: 29px;
+    --font-size-11xl: 30px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-base: 16px;
+    --font-size-24xl: 43px;
+    --font-size-7xl: 26px;
+    --font-size-15xl: 34px;
+  
+    /* Colors */
+    --color-darkslategray-100: #3b3b3b;
+    --color-darkslategray: #082943;
+    --color-gainsboro-100: #e6e6e6;
+    --color-gainsboro-200: #eadbdb;
+    --color-gainsboro: #d9d9d9;
+    --color-white: #fff;
+    --color-slategray: #517c96;
+    --color-black: #000;
+    --color-gray: #0f1035;
+    --color-silver: #bfbfbf;
+  
+    /* Gaps */
+    --gap-11xl: 30px;
+    --gap-41xl: 60px;
+    --gap-xl: 20px;
+    --gap-6xs: 7px;
+    --gap-46xl: 65px;
+    --gap-13xl: 32px;
+    --gap-22xl: 41px;
+    --gap-3xs: 10px;
+  
+    /* Paddings */
+    --padding-48xl: 67px;
+    --padding-14xl: 33px;
+    --padding-11xl: 30px;
+    --padding-18xl: 37px;
+    --padding-xl: 20px;
+    --padding-5xl: 24px;
+    --padding-34xl: 53px;
+    --padding-60xl: 79px;
+    --padding-sm: 14px;
+    --padding-20xl: 39px;
+    --padding-31xl: 50px;
+    --padding-11xs: 2px;
+    --padding-7xs: 6px;
+    --padding-8xs: 5px;
+    --padding-8xl: 27px;
+    --padding-3xl: 22px;
+    --padding-6xl: 25px;
+    --padding-mini: 15px;
+    --padding-6xs: 7px;
+    --padding-51xl: 70px;
+    --padding-25xl: 44px;
+    --padding-21xl: 40px;
+  
+    /* Border radiuses */
+    --br-3xs: 10px;
+    --br-6xs: 7px;
+    --br-11xl: 30px;
+  }
+  
+  
+  .frame-child6 {
+    width: 1440px;
+    height: 2754px;
+    position: relative;
+    background-color: var(--color-darkslategray);
+    display: none;
+    max-width: 100%;
+  }
+  .why-fifo-page {
+    margin: 0;
+  }
+  .why-fifo-page-container {
+    width: 621px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+  .page-replacement {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .page-replacement-is {
+    align-self: stretch;
+    height: 163px;
+    position: relative;
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .why-fifo {
+    width: 980px;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-mini) var(--padding-21xl) 0;
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+    max-width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size: var(--font-size-24xl);
+    color: var(--color-black);
+    font-family: var(--font-hammersmith-one);
+  }
+  .fifo-page-replacement {
+    width: 494px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+  .f-i-f-o-page-replace {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .fifo-algorithm-replaces,
+  .fifo-which-is,
+  .in-simple-words {
+    margin: 0;
+  }
+  .q-why-do {
+    margin: 0;
+    font-size: 21px;
+  }
+  .a-process-instead,
+  .main-memory-at,
+  .since-we-have {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  .fifo-which-is-container {
+    align-self: stretch;
+    height: 378px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 30px;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: var(--font-size-xl);
+  }
+  .fifo {
+    align-self: stretch;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-mini) var(--padding-21xl) 0;
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+    max-width: 100%;
+    z-index: 1;
+  }
+  .terminology-required-for1 {
+    margin: 0;
+  }
+  .terminology-required-for-container1 {
+    align-self: stretch;
+    position: relative;
+  }
+  .page-fault-it,
+  .page-hit-it {
+    margin-bottom: 0;
+  }
+  .page-fault-it-occurs-when-the {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: var(--padding-8xl);
+  }
+  .page-fault-it-container {
+    align-self: stretch;
+    height: 203px;
+    position: relative;
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .terminology {
+    align-self: stretch;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-mini) 39.5px 0;
+    gap: var(--gap-3xs);
+    z-index: 1;
+  }
+  .how-algorithm-work {
+    width: 467px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+  .how-algorithm-work-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .blank-line1 {
+    margin: 0;
+  }
+  .adding-the-new,
+  .bringing-in-a,
+  .handling-page-fault,
+  .maintaining-a-list,
+  .removing-the-oldest {
+    margin-bottom: 0;
+  }
+  .maintaining-a-list-of-pages-t {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: var(--padding-8xl);
+  }
+  .maintaining-a-list-container {
+    align-self: stretch;
+    height: 660px;
+    position: relative;
+    font-size: var(--font-size-xl);
+    line-height: 30px;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .f-i-f-o-simple,
+  .fifo-working {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .fifo-working {
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro);
+    overflow: hidden;
+    padding: var(--padding-mini) var(--padding-21xl) 0;
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+    z-index: 1;
+  }
+  .f-i-f-o-simple {
+    gap: var(--gap-22xl);
+  }
+  .advantages-disadvantages1 {
+    margin: 0;
+  }
+  .advantages-disadvantages-container1 {
+    width: 689px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+  .f-i-f-o-simulation {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    font-size: var(--font-size-24xl);
+  }
+  .advantages1 {
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+  .simplicity-fifo-is {
+    line-height: 30px;
+  }
+  .simplicity-fifo-is-one-of-the1 {
+    margin-bottom: 0;
+  }
+  .fairness-it-provides {
+    line-height: 30px;
+  }
+  .simplicity-fifo-is-one-of-the {
+    margin: 0;
+    font-family: inherit;
+    font-size: var(--font-size-xl);
+    padding-left: var(--padding-8xl);
+  }
+  .advantages-simplicity-container {
+    align-self: stretch;
+    position: relative;
+  }
+  .disadvantages1 {
+    margin-block-start: 0;
+    margin-block-end: 5px;
+    line-height: 133.3%;
+  }
+  .beladys-anomaly-fifo {
+    line-height: 30px;
+  }
+  .beladys-anomaly-fifo-can-suf1 {
+    margin-bottom: 0;
+  }
+  .poor-performance-fifo {
+    line-height: 30px;
+  }
+  .poor-performance-fifo-may-not {
+    margin-bottom: 0;
+  }
+  .doesnt-consider-page {
+    line-height: 30px;
+  }
+  .beladys-anomaly-fifo-can-suf {
+    margin: 0;
+    font-family: inherit;
+    font-size: var(--font-size-xl);
+    padding-left: var(--padding-8xl);
+  }
+  .disadvantages-beladys-container {
+    align-self: stretch;
+    height: 332px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .f-i-f-o-terminology,
+  .fifo-adv-disadv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .fifo-adv-disadv {
+    align-self: stretch;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro);
+    overflow: hidden;
+    padding: var(--padding-mini) var(--padding-21xl) 0;
+    gap: var(--gap-3xs);
+    z-index: 1;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+  }
+  .f-i-f-o-terminology {
+    width: 980px;
+    padding: 0 0 29px;
+    gap: 53px;
+    text-align: center;
+    font-size: var(--font-size-24xl);
+    color: var(--color-black);
+    font-family: var(--font-hammersmith-one);
+  }
+  .button-item {
+    height: 59px;
+    width: 187px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro);
+    display: none;
+  }
+  .simulate1 {
+    flex: 1;
+    position: relative;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-hammersmith-one);
+    color: var(--color-black);
+    text-align: left;
+    z-index: 1;
+  }
+  .button1,
+  .f-i-f-o-technical {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .button1 {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-sm) var(--padding-25xl) var(--padding-mini);
+    background-color: var(--color-gainsboro);
+    width: 187px;
+    border-radius: var(--br-3xs);
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .button1:hover {
+    background-color: var(--color-silver);
+  }
+  .f-i-f-o-technical {
+    width: 980px;
+    justify-content: center;
+    padding: 0 1px 0 0;
+    max-width: 100%;
+  }
+  .rectangle-root {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-darkslategray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-51xl) var(--padding-xl) 111px var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-22xl);
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 750px) {
+    .advantages-disadvantages-container1,
+    .fifo-page-replacement,
+    .how-algorithm-work,
+    .terminology-required-for-container1,
+    .why-fifo-page-container {
+      font-size: var(--font-size-15xl);
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .f-i-f-o-simple {
+      gap: 20px 41px;
+    }
+    .f-i-f-o-terminology {
+      gap: 26px 53px;
+    }
+    .rectangle-root {
+      gap: 20px 41px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .why-fifo-page-container {
+      font-size: var(--font-size-7xl);
+    }
+    .page-replacement-is {
+      font-size: var(--font-size-base);
+      line-height: 24px;
+    }
+    .fifo-page-replacement {
+      font-size: var(--font-size-7xl);
+    }
+    .fifo-which-is-container {
+      font-size: var(--font-size-base);
+      line-height: 24px;
+    }
+    .terminology-required-for-container1 {
+      font-size: var(--font-size-7xl);
+    }
+    .page-fault-it-container {
+      font-size: var(--font-size-base);
+      line-height: 24px;
+    }
+    .how-algorithm-work {
+      font-size: var(--font-size-7xl);
+    }
+    .maintaining-a-list-container {
+      font-size: var(--font-size-base);
+      line-height: 24px;
+    }
+    .advantages-disadvantages-container1 {
+      font-size: var(--font-size-7xl);
+    }
+    .advantages-simplicity-container,
+    .disadvantages-beladys-container {
+      font-size: var(--font-size-base);
+    }
+    .simulate1 {
+      font-size: var(--font-size-lgi);
+    }
+  }
+  
