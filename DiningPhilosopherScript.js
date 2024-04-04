@@ -160,17 +160,18 @@ function appendToOutput(message) {
     
     
     if (message.includes("Thinking")) {
-        div.style.color = "blue";
+        div.style.color = " #35c3ff ";
     } else if (message.includes("Waiting for forks")) {
         div.style.color = " #5bd5c8 ";
     } else if (message.includes("Eating")) {
-        div.style.color = "purple";
+        div.style.color = "#5C6BC0";
     } else if (message.includes("Using") || message.includes("Releasing")) {
-        div.style.color = "green";
+        div.style.color = "#4DD0E1";
     } else if (message.includes("All philosophers have finished eating")) {
-        div.style.fontWeight = "bold";
+        div.style.fontWeight = "bold ";
+        div.style.color = "ghostwhite";
     } else {
-        div.style.color = "black";
+        div.style.color = "red";
     }
 
     outputLines.appendChild(div);
