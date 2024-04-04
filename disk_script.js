@@ -42,7 +42,7 @@ let setCounter = (sortedRequest, headPos) => {
         }
     }
 
-   
+
     console.log(left);
     return left; 
 }
