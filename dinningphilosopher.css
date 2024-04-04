@@ -3,7 +3,7 @@ body {
 }
 
 .back-video {
-  position: absolute;
+  position: fixed;
   right: 0;
   /* bottom: 0; */
   top: 0;
@@ -11,7 +11,7 @@ body {
   filter: brightness(0.5);
 
 }
-
+/* 
 @media (min-aspect-ratio : 16/9) {
   .back-video {
     width: 100%;
@@ -24,7 +24,7 @@ body {
     width: auto;
     height: 100%;
   }
-}
+} */
 
 .container {
   max-width: fit-content;
@@ -77,54 +77,62 @@ button:hover {
   top: 18px;
   /* left: 385px;  */
   left: 47%;
+  color:#ccc;
 }
 
 #p1 #p1Msg{
  margin-top: 0px;
+ color: #ccc;
 }
 
 #p2 {
   position: absolute;
   top: 230px;
   left: 62%;
+  color: #ccc;
 
 }
 
 #p2 #p2Msg{
   margin-top: 0px;
+  color: #ccc;
  }
 
 #p3 {
   position: absolute;
   top: 455px;
   left: 58%;
-
+color: #ccc;
 }
 
 #p3 #p3Msg{
   margin-top: 0px;
+  color: #ccc;
  }
 
 #p4 {
   position: absolute;
   top: 455px;
   left: 35%;
-
+color: #ccc;
 }
 
 #p4 #p4Msg{
   margin-top: 0px;
+  color: #ccc;
  }
 
 #p5 {
   position: absolute;
   top: 230px;
   left: 31%;
+  color: #ccc;
 
 }
 
 #p5 #p5Msg{
   margin-top: 0px;
+  color: #ccc;
  }
 
 .content {

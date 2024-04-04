@@ -162,7 +162,7 @@ function appendToOutput(message) {
     if (message.includes("Thinking")) {
         div.style.color = "blue";
     } else if (message.includes("Waiting for forks")) {
-        div.style.color = "red";
+        div.style.color = " #5bd5c8 ";
     } else if (message.includes("Eating")) {
         div.style.color = "purple";
     } else if (message.includes("Using") || message.includes("Releasing")) {
