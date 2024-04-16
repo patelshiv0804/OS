@@ -1,10 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 *{
   margin: 0;
 }
+
 .navbar {
   background: #012846;
   font-family: "Anta", sans-serif;
@@ -84,6 +87,9 @@ nav a:hover:after {
   /* display: flex; */
   padding-top: 120px;
   justify-content: space-between;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
@@ -97,6 +103,9 @@ input[type="number"] {
   text-align: center;
   background: transparent;
   color: white;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {
