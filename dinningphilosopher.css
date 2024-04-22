@@ -4,7 +4,7 @@ body {
   font-style: normal;
 }
 
-*{
+* {
   margin: 0;
 }
 
@@ -95,7 +95,8 @@ nav .hover:after {
   width: 0;
   left: 0;
   bottom: -10px;
-  transition: width 0.7s; /* Adjusted transition duration */
+  transition: width 0.7s;
+  /* Adjusted transition duration */
 }
 
 nav .hover:hover {
@@ -114,7 +115,8 @@ nav .hover:hover:after {
   min-width: 160px;
   z-index: 1;
   margin-top: 10px;
-  transition: opacity 1s ease-in-out; /* Adjusted transition duration */
+  transition: opacity 1s ease-in-out;
+  /* Adjusted transition duration */
 }
 
 .dropdown-content a {
@@ -122,6 +124,11 @@ nav .hover:hover:after {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+.dropdown-content a:hover {
+  color: #1868a7;
+  transition-duration: 0.1s;
 }
 
 .back-video {
@@ -133,6 +140,7 @@ nav .hover:hover:after {
   filter: brightness(0.4);
 
 }
+
 /* 
 @media (min-aspect-ratio : 16/9) {
   .back-video {
@@ -207,12 +215,12 @@ button:hover {
   top: 60px;
   /* left: 385px;  */
   left: 47%;
-  color:#ccc;
+  color: #ccc;
 }
 
-#p1 #p1Msg{
- margin-top: 0px;
- color: #ccc;
+#p1 #p1Msg {
+  margin-top: 0px;
+  color: #ccc;
 }
 
 #p2 {
@@ -223,34 +231,34 @@ button:hover {
 
 }
 
-#p2 #p2Msg{
+#p2 #p2Msg {
   margin-top: 0px;
   color: #ccc;
- }
+}
 
 #p3 {
   position: absolute;
   top: 500px;
   left: 58%;
-color: #ccc;
+  color: #ccc;
 }
 
-#p3 #p3Msg{
+#p3 #p3Msg {
   margin-top: 0px;
   color: #ccc;
- }
+}
 
 #p4 {
   position: absolute;
   top: 500px;
   left: 35%;
-color: #ccc;
+  color: #ccc;
 }
 
-#p4 #p4Msg{
+#p4 #p4Msg {
   margin-top: 0px;
   color: #ccc;
- }
+}
 
 #p5 {
   position: absolute;
@@ -260,19 +268,19 @@ color: #ccc;
 
 }
 
-#p5 #p5Msg{
+#p5 #p5Msg {
   margin-top: 0px;
   color: #ccc;
- }
+}
 
- button {
+button {
   padding: 10px 20px;
   /* background-color: #007bff; */
   background: linear-gradient(94.82deg,
-          #00192c 14.6%,
-          #003a67 55.34%,
-          #1868a7 79.26%,
-          #2774b2);
+      #00192c 14.6%,
+      #003a67 55.34%,
+      #1868a7 79.26%,
+      #2774b2);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -282,9 +290,9 @@ color: #ccc;
   font-style: normal;
 }
 
-h2{
+h2 {
   color: #ccc;
- }
+}
 
 .content {
   margin-top: 55px;

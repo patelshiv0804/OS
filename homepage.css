@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-   
+  margin: 0;
+  padding: 0;
+
 }
 
 /* .navbar {
@@ -91,7 +91,8 @@ nav .hover:after {
   width: 0;
   left: 0;
   bottom: -10px;
-  transition: width 0.7s; /* Adjusted transition duration */
+  transition: width 0.7s;
+  /* Adjusted transition duration */
 }
 
 nav .hover:hover {
@@ -110,7 +111,8 @@ nav .hover:hover:after {
   min-width: 160px;
   z-index: 1;
   margin-top: 10px;
-  transition: opacity 1s ease-in-out; /* Adjusted transition duration */
+  transition: opacity 1s ease-in-out;
+  /* Adjusted transition duration */
 }
 
 .dropdown-content a {
@@ -120,95 +122,100 @@ nav .hover:hover:after {
   display: block;
 }
 
+.dropdown-content a:hover {
+  color: #1868a7;
+  transition-duration: 0.1s;
+}
+
 .homepage {
-    height: 94vh;
-    background-image: url(photos/home.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 94vh;
+  background-image: url(photos/home.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .PARA {
-    text-shadow: #47D2FE 1px 0 10px;
-    text-align: center;
-    font-size: 93px;
-    position: relative;
-    z-index: 1;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    transition: 0.5s;
+  text-shadow: #47D2FE 1px 0 10px;
+  text-align: center;
+  font-size: 93px;
+  position: relative;
+  z-index: 1;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.5s;
 }
 
 .PARA:hover {
 
-    -webkit-text-stroke: 2px #fff;
-    color: transparent;
-    cursor: pointer;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  cursor: pointer;
 }
 
 
 .btn {
-    border-radius: 10px;
-    background: none;
-    color: #fff;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    padding: 12px 20px;
-    min-width: 200px;
-    margin: 10px;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    position: relative;
-    z-index: 0;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 0;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .btn:hover {
-    color: #fff;
-    overflow: hidden;
-    border-radius: 10px;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .btn::before {
-    content: "";
-    position: absolute;
-    border-radius: 10px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* background: #000; */
-    z-index: -1;
-    /* background-image: linear-gradient(to right, rgb(7, 15, 43) 0%, rgb(27, 26, 85) 45% , rgb(83, 92, 145) 100%); */
-    background: linear-gradient(94.82deg,
-            #00192c 14.6%,
-            #003a67 55.34%,
-            #1868a7 79.26%,
-            #2774b2);
-    transition: transform 0.5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-    overflow: hidden;
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #000; */
+  z-index: -1;
+  /* background-image: linear-gradient(to right, rgb(7, 15, 43) 0%, rgb(27, 26, 85) 45% , rgb(83, 92, 145) 100%); */
+  background: linear-gradient(94.82deg,
+      #00192c 14.6%,
+      #003a67 55.34%,
+      #1868a7 79.26%,
+      #2774b2);
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  overflow: hidden;
 }
 
 .btn1::before {
-    transform: scaleY(0);
-    overflow: hidden;
+  transform: scaleY(0);
+  overflow: hidden;
 
 }
 
 .btn1:hover::before {
-    transform: scaleY(1);
-    overflow: hidden;
+  transform: scaleY(1);
+  overflow: hidden;
 }
 
 
