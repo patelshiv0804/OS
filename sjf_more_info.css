@@ -52,6 +52,81 @@ body {
   --br-3xs: 10px;
 }
 
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content:hover {
+  display: block;
+}
+
+.navbar {
+  background: #081520;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  height: 50px;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+nav .hover {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+nav .hover:after {
+  content: "";
+  position: absolute;
+  background-color: #216b8c;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.7s;
+  /* Adjusted transition duration */
+}
+
+nav .hover:hover {
+  color: #9bdcff;
+}
+
+nav .hover:hover:after {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  background-color: #081520;
+  min-width: 160px;
+  z-index: 2;
+  margin-top: 10px;
+  transition: opacity 1s ease-in-out;
+  /* Adjusted transition duration */
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #1868a7;
+  transition-duration: 0.1s;
+}
+
 .frame-parent-child {
   width: 1440px;
   height: 2194px;
@@ -60,9 +135,11 @@ body {
   display: none;
   max-width: 100%;
 }
+
 .why-shortest-job {
   margin: 0;
 }
+
 .why-shortest-job-container {
   width: 589px;
   position: relative;
@@ -70,6 +147,7 @@ body {
   flex-shrink: 0;
   max-width: 100%;
 }
+
 .why-shortest-job-first-wrapper {
   align-self: stretch;
   display: flex;
@@ -78,6 +156,7 @@ body {
   justify-content: center;
   max-width: 100%;
 }
+
 .sjf-is-used {
   align-self: stretch;
   position: relative;
@@ -85,6 +164,7 @@ body {
   line-height: 30px;
   text-align: left;
 }
+
 .frame-collection,
 .frame-container {
   display: flex;
@@ -93,6 +173,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .frame-container {
   flex: 1;
   border-radius: var(--br-3xs);
@@ -103,6 +184,7 @@ body {
   gap: var(--gap-3xs);
   z-index: 1;
 }
+
 .frame-collection {
   width: 982px;
   flex-direction: row;
@@ -112,13 +194,16 @@ body {
   color: var(--color-black);
   font-family: var(--font-hammersmith-one);
 }
+
 .shortest-job-first3 {
   margin: 0;
   white-space: pre-wrap;
 }
+
 .blank-line {
   margin: 0;
 }
+
 .shortest-job-first-container {
   height: 53.8px;
   width: 589px;
@@ -127,6 +212,7 @@ body {
   flex-shrink: 0;
   max-width: 100%;
 }
+
 .shortest-job-first-wrapper {
   align-self: stretch;
   display: flex;
@@ -135,6 +221,7 @@ body {
   justify-content: center;
   max-width: 100%;
 }
+
 .shortest-job-first-scheduling {
   align-self: stretch;
   position: relative;
@@ -143,6 +230,7 @@ body {
   line-height: 30px;
   text-align: left;
 }
+
 .frame-parent1 {
   align-self: stretch;
   border-radius: var(--br-3xs);
@@ -158,9 +246,11 @@ body {
   max-width: 100%;
   z-index: 1;
 }
+
 .characteristics-of-sjf {
   margin: 0;
 }
+
 .characteristics-of-sjf-container {
   width: 589px;
   position: relative;
@@ -168,6 +258,7 @@ body {
   flex-shrink: 0;
   max-width: 100%;
 }
+
 .characteristics-of-sjf-wrapper {
   align-self: stretch;
   display: flex;
@@ -176,18 +267,21 @@ body {
   justify-content: center;
   max-width: 100%;
 }
+
 .it-can-increase,
 .it-is-associated,
 .it-suits-best,
 .since-the-jobs {
   margin-bottom: 0;
 }
+
 .it-suits-best-in-batch-type-sy {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   padding-left: var(--padding-8xl);
 }
+
 .it-suits-best-container {
   align-self: stretch;
   height: 222px;
@@ -198,6 +292,7 @@ body {
   display: inline-block;
   flex-shrink: 0;
 }
+
 .disadvantages-frame,
 .frame-parent2 {
   display: flex;
@@ -206,6 +301,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .frame-parent2 {
   flex: 1;
   border-radius: var(--br-3xs);
@@ -216,14 +312,17 @@ body {
   gap: var(--gap-3xs);
   z-index: 1;
 }
+
 .disadvantages-frame {
   align-self: stretch;
   flex-direction: row;
   padding: 0 var(--padding-11xs) 0 0;
 }
+
 .advantages-disadvantages {
   margin: 0;
 }
+
 .advantages-disadvantages-container {
   width: 689px;
   position: relative;
@@ -231,6 +330,7 @@ body {
   flex-shrink: 0;
   max-width: 100%;
 }
+
 .button-node {
   align-self: stretch;
   display: flex;
@@ -241,68 +341,86 @@ body {
   text-align: center;
   font-size: var(--font-size-24xl);
 }
+
 .advantages {
   margin-block-start: 0;
   margin-block-end: 5px;
 }
+
 .minimizes-average-waiting {
   line-height: 30px;
 }
+
 .minimizes-average-waiting-time1 {
   margin-bottom: 0;
 }
+
 .optimal-for-certain {
   line-height: 30px;
 }
+
 .optimal-for-certain-workloads {
   margin-bottom: 0;
 }
+
 .improves-system-throughput {
   line-height: 30px;
 }
+
 .minimizes-average-waiting-time {
   margin: 0;
   font-family: inherit;
   font-size: var(--font-size-xl);
   padding-left: var(--padding-8xl);
 }
+
 .advantages-minimizes-container {
   align-self: stretch;
   position: relative;
 }
+
 .disadvantages {
   margin-block-start: 0;
   margin-block-end: 5px;
   line-height: 133.3%;
 }
+
 .prediction-issues-sjf {
   line-height: 30px;
 }
+
 .prediction-issues-sjf-require1 {
   margin-bottom: 0;
 }
+
 .possibility-of-starvation {
   line-height: 30px;
 }
+
 .possibility-of-starvation-lon {
   margin-bottom: 0;
 }
+
 .pre-emption-overhead-implemen {
   line-height: 30px;
 }
+
 .span {
   line-height: 133.3%;
 }
+
 .prediction-issues-sjf-require {
   margin: 0;
   font-family: inherit;
   font-size: var(--font-size-xl);
   padding-left: var(--padding-8xl);
 }
+
 .disadvantages-prediction-container {
   align-self: stretch;
   position: relative;
 }
+
 .button-node-parent {
   align-self: stretch;
   border-radius: var(--br-3xs);
@@ -320,15 +438,18 @@ body {
   text-align: left;
   font-size: var(--font-size-5xl);
 }
+
 .terminology-required-for {
   margin: 0;
 }
+
 .terminology-required-for-container {
   flex: 1;
   position: relative;
   display: inline-block;
   max-width: 100%;
 }
+
 .terminology-required-for-sjf-t-wrapper {
   align-self: stretch;
   display: flex;
@@ -339,33 +460,40 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .arrival-time-the,
 .burst-time-the,
 .finish-time-the,
 .turnaround-time-the {
   margin-bottom: 0;
 }
+
 .arrival-time-the-time-at-whic {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   padding-left: var(--padding-8xl);
 }
+
 .turn-around-time {
   margin: 0;
 }
+
 .waiting-time-the {
   margin-bottom: 0;
 }
+
 .waiting-time-the-total-time-a {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   padding-left: var(--padding-8xl);
 }
+
 .waiting-time {
   margin: 0;
 }
+
 .arrival-time-the-container {
   align-self: stretch;
   height: 282px;
@@ -376,6 +504,7 @@ body {
   display: inline-block;
   flex-shrink: 0;
 }
+
 .frame-parent3,
 .s-j-f-scheduling-frame {
   display: flex;
@@ -384,6 +513,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .frame-parent3 {
   align-self: stretch;
   border-radius: var(--br-3xs);
@@ -394,6 +524,7 @@ body {
   gap: var(--gap-3xs);
   z-index: 1;
 }
+
 .s-j-f-scheduling-frame {
   width: 982px;
   align-items: flex-end;
@@ -404,6 +535,7 @@ body {
   color: var(--color-black);
   font-family: var(--font-hammersmith-one);
 }
+
 /* .button-child {
   height: 59px;
   width: 187px;
@@ -456,7 +588,9 @@ body {
   gap: 41px;
   letter-spacing: normal;
 }
+
 @media screen and (max-width: 900px) {
+
   .advantages-disadvantages-container,
   .characteristics-of-sjf-container,
   .shortest-job-first-container,
@@ -464,56 +598,70 @@ body {
   .why-shortest-job-container {
     font-size: var(--font-size-15xl);
   }
+
   .terminology-required-for-sjf-t-wrapper {
     padding-left: var(--padding-20xl);
     padding-right: var(--padding-20xl);
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 700px) {
   .s-j-f-scheduling-frame {
     gap: 20px 40.933333333333394px;
   }
+
   .frame-parent {
     gap: 20px 41px;
   }
 }
+
 @media screen and (max-width: 450px) {
   .why-shortest-job-container {
     font-size: var(--font-size-7xl);
   }
+
   .sjf-is-used {
     font-size: var(--font-size-base);
     line-height: 24px;
   }
+
   .shortest-job-first-container {
     font-size: var(--font-size-7xl);
   }
+
   .shortest-job-first-scheduling {
     font-size: var(--font-size-base);
     line-height: 24px;
   }
+
   .characteristics-of-sjf-container {
     font-size: var(--font-size-7xl);
   }
+
   .it-suits-best-container {
     font-size: var(--font-size-base);
     line-height: 24px;
   }
+
   .advantages-disadvantages-container {
     font-size: var(--font-size-7xl);
   }
+
   .advantages-minimizes-container,
   .disadvantages-prediction-container {
     font-size: var(--font-size-base);
   }
+
   .terminology-required-for-container {
     font-size: var(--font-size-7xl);
   }
+
   .arrival-time-the-container {
     font-size: var(--font-size-base);
     line-height: 24px;
   }
+
   /* .simulate {
     font-size: 19px;
   } */
@@ -538,7 +686,7 @@ body {
   font-style: normal;
 }
 
-.btn_a{
+.btn_a {
   display: contents;
 }
 
@@ -560,10 +708,10 @@ body {
   z-index: -1;
   /* background-image: linear-gradient(to right, rgb(7, 15, 43) 0%, rgb(27, 26, 85) 45% , rgb(83, 92, 145) 100%); */
   background: linear-gradient(94.82deg,
-          #00192c 14.6%,
-          #003a67 55.34%,
-          #1868a7 79.26%,
-          #2774b2);
+      #00192c 14.6%,
+      #003a67 55.34%,
+      #1868a7 79.26%,
+      #2774b2);
   transition: transform 0.5s;
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);

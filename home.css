@@ -116,6 +116,11 @@ nav .hover:hover:after {
   display: block;
 }
 
+.dropdown-content a:hover {
+    color: #1868a7;
+    transition-duration: 0.1s;
+}
+
 body{
 background-color: rgb(8,41,67);
   }

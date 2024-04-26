@@ -1,524 +1,659 @@
 body {
-    margin: 0;
-    line-height: normal;
-  }
-  
-  :root {
-    /* fonts */
-    --font-inter: Inter;
-    --font-hammersmith-one: "Hammersmith One";
-  
-    /* font sizes */
-    --font-size-sm: 14px;
-    --font-size-5xl: 24px;
-    --font-size-lgi: 19px;
-    --font-size-17xl: 36px;
-    --font-size-3xl: 22px;
-    --font-size-10xl: 29px;
-    --font-size-11xl: 30px;
-    --font-size-lg: 18px;
-    --font-size-xl: 20px;
-    --font-size-base: 16px;
-    --font-size-24xl: 43px;
-    --font-size-7xl: 26px;
-    --font-size-15xl: 34px;
-  
-    /* Colors */
-    --color-darkslategray-100: #3b3b3b;
-    --color-darkslategray: #082943;
-    --color-gainsboro-100: #e6e6e6;
-    --color-gainsboro-200: #eadbdb;
-    --color-gainsboro: #d9d9d9;
-    --color-white: #fff;
-    --color-slategray: #517c96;
-    --color-black: #000;
-    --color-gray: #0f1035;
-    --color-silver: #bfbfbf;
-  
-    /* Gaps */
-    --gap-11xl: 30px;
-    --gap-41xl: 60px;
-    --gap-xl: 20px;
-    --gap-6xs: 7px;
-    --gap-46xl: 65px;
-    --gap-13xl: 32px;
-    --gap-22xl: 41px;
-    --gap-3xs: 10px;
-  
-    /* Paddings */
-    --padding-48xl: 67px;
-    --padding-14xl: 33px;
-    --padding-11xl: 30px;
-    --padding-18xl: 37px;
-    --padding-xl: 20px;
-    --padding-5xl: 24px;
-    --padding-34xl: 53px;
-    --padding-60xl: 79px;
-    --padding-sm: 14px;
-    --padding-20xl: 39px;
-    --padding-31xl: 50px;
-    --padding-11xs: 2px;
-    --padding-7xs: 6px;
-    --padding-8xs: 5px;
-    --padding-8xl: 27px;
-    --padding-3xl: 22px;
-    --padding-6xl: 25px;
-    --padding-mini: 15px;
-    --padding-6xs: 7px;
-    --padding-51xl: 70px;
-    --padding-25xl: 44px;
-    --padding-21xl: 40px;
-    --padding-50xl: 69px;
-    --padding-15xl: 34px;
-  
-    /* Border radiuses */
-    --br-3xs: 10px;
-    --br-6xs: 7px;
-    --br-11xl: 30px;
-  }
-  
-  
-  .dinning-rectangle {
-    width: 1440px;
-    height: 2716px;
-    position: relative;
-    background-color: var(--color-darkslategray);
-    display: none;
-    max-width: 100%;
-  }
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-hammersmith-one: "Hammersmith One";
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-17xl: 36px;
+  --font-size-3xl: 22px;
+  --font-size-10xl: 29px;
+  --font-size-11xl: 30px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-24xl: 43px;
+  --font-size-7xl: 26px;
+  --font-size-15xl: 34px;
+
+  /* Colors */
+  --color-darkslategray-100: #3b3b3b;
+  --color-darkslategray: #082943;
+  --color-gainsboro-100: #e6e6e6;
+  --color-gainsboro-200: #eadbdb;
+  --color-gainsboro: #d9d9d9;
+  --color-white: #fff;
+  --color-slategray: #517c96;
+  --color-black: #000;
+  --color-gray: #0f1035;
+  --color-silver: #bfbfbf;
+
+  /* Gaps */
+  --gap-11xl: 30px;
+  --gap-41xl: 60px;
+  --gap-xl: 20px;
+  --gap-6xs: 7px;
+  --gap-46xl: 65px;
+  --gap-13xl: 32px;
+  --gap-22xl: 41px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-48xl: 67px;
+  --padding-14xl: 33px;
+  --padding-11xl: 30px;
+  --padding-18xl: 37px;
+  --padding-xl: 20px;
+  --padding-5xl: 24px;
+  --padding-34xl: 53px;
+  --padding-60xl: 79px;
+  --padding-sm: 14px;
+  --padding-20xl: 39px;
+  --padding-31xl: 50px;
+  --padding-11xs: 2px;
+  --padding-7xs: 6px;
+  --padding-8xs: 5px;
+  --padding-8xl: 27px;
+  --padding-3xl: 22px;
+  --padding-6xl: 25px;
+  --padding-mini: 15px;
+  --padding-6xs: 7px;
+  --padding-51xl: 70px;
+  --padding-25xl: 44px;
+  --padding-21xl: 40px;
+  --padding-50xl: 69px;
+  --padding-15xl: 34px;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-6xs: 7px;
+  --br-11xl: 30px;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content:hover {
+  display: block;
+}
+
+.navbar {
+  background: #081520;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  height: 50px;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+nav .hover {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+nav .hover:after {
+  content: "";
+  position: absolute;
+  background-color: #216b8c;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.7s;
+  /* Adjusted transition duration */
+}
+
+nav .hover:hover {
+  color: #9bdcff;
+}
+
+nav .hover:hover:after {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  background-color: #081520;
+  min-width: 160px;
+  z-index: 2;
+  margin-top: 10px;
+  transition: opacity 1s ease-in-out;
+  /* Adjusted transition duration */
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #1868a7;
+  transition-duration: 0.1s;
+}
+
+.dinning-rectangle {
+  width: 1440px;
+  height: 2716px;
+  position: relative;
+  background-color: var(--color-darkslategray);
+  display: none;
+  max-width: 100%;
+}
+
+.what-is-dining {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.what-is-dining-philosophers-p-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 21px 0 21.5px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.the-dining-philosophers {
+  margin: 0;
+}
+
+.there-are-n {
+  margin-bottom: 0;
+}
+
+.there-are-n-philosophers-sitti {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-8xl);
+}
+
+.the-dining-philosophers-container {
+  align-self: stretch;
+  height: 439px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 30px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.dinning-philosopher-wrapper,
+.dinning-philosopher2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.dinning-philosopher2 {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-mini) var(--padding-21xl) 0;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
+
+.dinning-philosopher-wrapper {
+  width: 982px;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-11xs);
+  text-align: center;
+  font-size: var(--font-size-24xl);
+  color: var(--color-black);
+  font-family: var(--font-hammersmith-one);
+}
+
+.main-challenges-in {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.main-challenges-in-dinning-phi-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 41px 0 41.5px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.the-main-challenge {
+  align-self: stretch;
+  height: 196px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.main-challenges {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-21xl) 8px;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  z-index: 1;
+}
+
+.dining-philosophers-problem {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.dining-philosophers-problem-i-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-50xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.deadlock-this-occurs,
+.starvation-even-without {
+  margin-bottom: 0;
+}
+
+.deadlock-this-occurs-when-eac {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-8xl);
+}
+
+.deadlock-this-occurs-container {
+  align-self: stretch;
+  height: 290px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 30px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.problem {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-21xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  z-index: 1;
+}
+
+.how-we-can {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.how-we-can-solve-it-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-50xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.asymmetric-solution-introduce,
+.mutexes-or-locks,
+.resource-hierarchy-assign,
+.semaphore-solution-use {
+  margin-bottom: 0;
+}
+
+.mutexes-or-locks-use-mutexes {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-8xl);
+}
+
+.mutexes-or-locks-container {
+  align-self: stretch;
+  height: 502px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 30px;
+  text-align: left;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.how-to-solve {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-21xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  z-index: 1;
+}
+
+.how-algorithm-work1 {
+  margin: 0;
+  width: 467px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.how-algorithm-work-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.initially-all-philosophers,
+.when-a-philosopher {
+  margin-bottom: 0;
+}
+
+.initially-all-philosophers-ar {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-8xl);
+}
+
+.a-for-philosophers,
+.b-for-the,
+.c-if-both {
+  margin: 0;
+}
+
+.after-eating-the,
+.once-both-forks {
+  margin-bottom: 0;
+}
+
+.once-both-forks-are-acquired {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-8xl);
+}
+
+.initially-all-philosophers-container {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 30px;
+  text-align: left;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 14;
+  -webkit-box-orient: vertical;
+}
+
+.dinning-working,
+.main-challenges-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.dinning-working {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  overflow: hidden;
+  padding: var(--padding-mini) var(--padding-21xl) 0;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
+
+.main-challenges-parent {
+  width: 980px;
+  padding: 0 0 var(--padding-7xs);
+  gap: var(--gap-22xl);
+  text-align: center;
+  font-size: var(--font-size-24xl);
+  color: var(--color-black);
+  font-family: var(--font-hammersmith-one);
+}
+
+.dinning-btn-child {
+  height: 59px;
+  width: 187px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro);
+  display: none;
+}
+
+.simulate2 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-hammersmith-one);
+  color: var(--color-black);
+  text-align: left;
+  z-index: 1;
+}
+
+.dinning-btn,
+.dinning-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.dinning-btn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-25xl) var(--padding-mini);
+  background-color: var(--color-gainsboro);
+  width: 187px;
+  border-radius: var(--br-3xs);
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.dinning-btn:hover {
+  background-color: var(--color-silver);
+}
+
+.dinning-btn-wrapper {
+  width: 982px;
+  justify-content: center;
+  padding: 0 3px 0 0;
+  max-width: 100%;
+}
+
+.dinning-rectangle-parent {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-darkslategray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-51xl) var(--padding-xl) 105px var(--padding-3xl);
+  box-sizing: border-box;
+  gap: var(--gap-22xl);
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 900px) {
+
+  .dining-philosophers-problem,
+  .main-challenges-in,
   .what-is-dining {
-    margin: 0;
-    flex: 1;
-    position: relative;
-    font-size: inherit;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
+    font-size: var(--font-size-15xl);
   }
-  .what-is-dining-philosophers-p-wrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 21px 0 21.5px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  .the-dining-philosophers {
-    margin: 0;
-  }
-  .there-are-n {
-    margin-bottom: 0;
-  }
-  .there-are-n-philosophers-sitti {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: var(--padding-8xl);
-  }
-  .the-dining-philosophers-container {
-    align-self: stretch;
-    height: 439px;
-    position: relative;
-    font-size: var(--font-size-xl);
-    line-height: 30px;
-    text-align: left;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .dinning-philosopher-wrapper,
-  .dinning-philosopher2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  .dinning-philosopher2 {
-    flex: 1;
-    border-radius: var(--br-3xs);
-    background-color: var(--color-gainsboro);
-    overflow: hidden;
-    flex-direction: column;
-    padding: var(--padding-mini) var(--padding-21xl) 0;
-    gap: var(--gap-3xs);
-    z-index: 1;
-  }
-  .dinning-philosopher-wrapper {
-    width: 982px;
-    flex-direction: row;
-    padding: 0 0 0 var(--padding-11xs);
-    text-align: center;
-    font-size: var(--font-size-24xl);
-    color: var(--color-black);
-    font-family: var(--font-hammersmith-one);
-  }
-  .main-challenges-in {
-    margin: 0;
-    flex: 1;
-    position: relative;
-    font-size: inherit;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .main-challenges-in-dinning-phi-wrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 41px 0 41.5px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  .the-main-challenge {
-    align-self: stretch;
-    height: 196px;
-    position: relative;
-    font-size: var(--font-size-xl);
-    letter-spacing: 0.03em;
-    line-height: 30px;
-    text-align: left;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .main-challenges {
-    align-self: stretch;
-    border-radius: var(--br-3xs);
-    background-color: var(--color-gainsboro);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--padding-mini) var(--padding-21xl) 8px;
-    box-sizing: border-box;
-    gap: var(--gap-3xs);
-    max-width: 100%;
-    z-index: 1;
-  }
-  .dining-philosophers-problem {
-    margin: 0;
-    flex: 1;
-    position: relative;
-    font-size: inherit;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
+
   .dining-philosophers-problem-i-wrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 var(--padding-50xl);
+    padding-left: var(--padding-15xl);
+    padding-right: var(--padding-15xl);
     box-sizing: border-box;
-    max-width: 100%;
   }
-  .deadlock-this-occurs,
-  .starvation-even-without {
-    margin-bottom: 0;
-  }
-  .deadlock-this-occurs-when-eac {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: var(--padding-8xl);
-  }
-  .deadlock-this-occurs-container {
-    align-self: stretch;
-    height: 290px;
-    position: relative;
-    font-size: var(--font-size-xl);
-    line-height: 30px;
-    text-align: left;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .problem {
-    align-self: stretch;
-    border-radius: var(--br-3xs);
-    background-color: var(--color-gainsboro);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--padding-mini) var(--padding-21xl) 0;
-    box-sizing: border-box;
-    gap: var(--gap-3xs);
-    max-width: 100%;
-    z-index: 1;
-  }
+
   .how-we-can {
-    margin: 0;
-    flex: 1;
-    position: relative;
-    font-size: inherit;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
+    font-size: var(--font-size-15xl);
   }
+
   .how-we-can-solve-it-wrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 var(--padding-50xl);
+    padding-left: var(--padding-15xl);
+    padding-right: var(--padding-15xl);
     box-sizing: border-box;
-    max-width: 100%;
   }
-  .asymmetric-solution-introduce,
-  .mutexes-or-locks,
-  .resource-hierarchy-assign,
-  .semaphore-solution-use {
-    margin-bottom: 0;
-  }
-  .mutexes-or-locks-use-mutexes {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: var(--padding-8xl);
-  }
-  .mutexes-or-locks-container {
-    align-self: stretch;
-    height: 502px;
-    position: relative;
-    font-size: var(--font-size-xl);
-    line-height: 30px;
-    text-align: left;
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .how-to-solve {
-    align-self: stretch;
-    border-radius: var(--br-3xs);
-    background-color: var(--color-gainsboro);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--padding-mini) var(--padding-21xl) 0;
-    box-sizing: border-box;
-    gap: var(--gap-3xs);
-    max-width: 100%;
-    z-index: 1;
-  }
+
   .how-algorithm-work1 {
-    margin: 0;
-    width: 467px;
-    position: relative;
-    font-size: inherit;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    flex-shrink: 0;
-    max-width: 100%;
+    font-size: var(--font-size-15xl);
   }
-  .how-algorithm-work-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+
+  .dinning-rectangle-parent,
+  .main-challenges-parent {
+    gap: 20px 41px;
   }
-  .initially-all-philosophers,
-  .when-a-philosopher {
-    margin-bottom: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .what-is-dining {
+    font-size: var(--font-size-7xl);
   }
-  .initially-all-philosophers-ar {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: var(--padding-8xl);
+
+  .the-dining-philosophers-container {
+    font-size: var(--font-size-base);
+    line-height: 24px;
   }
-  .a-for-philosophers,
-  .b-for-the,
-  .c-if-both {
-    margin: 0;
+
+  .main-challenges-in {
+    font-size: var(--font-size-7xl);
   }
-  .after-eating-the,
-  .once-both-forks {
-    margin-bottom: 0;
+
+  .the-main-challenge {
+    font-size: var(--font-size-base);
+    line-height: 24px;
   }
-  .once-both-forks-are-acquired {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: var(--padding-8xl);
+
+  .dining-philosophers-problem {
+    font-size: var(--font-size-7xl);
   }
+
+  .deadlock-this-occurs-container {
+    font-size: var(--font-size-base);
+    line-height: 24px;
+  }
+
+  .how-we-can {
+    font-size: var(--font-size-7xl);
+  }
+
+  .mutexes-or-locks-container {
+    font-size: var(--font-size-base);
+    line-height: 24px;
+  }
+
+  .how-algorithm-work1 {
+    font-size: var(--font-size-7xl);
+  }
+
   .initially-all-philosophers-container {
-    align-self: stretch;
-    position: relative;
-    font-size: var(--font-size-xl);
-    line-height: 30px;
-    text-align: left;
-    display: -webkit-inline-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 14;
-    -webkit-box-orient: vertical;
+    font-size: var(--font-size-base);
+    line-height: 24px;
   }
-  .dinning-working,
-  .main-challenges-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  .dinning-working {
-    align-self: stretch;
-    border-radius: var(--br-3xs);
-    background-color: var(--color-gainsboro);
-    overflow: hidden;
-    padding: var(--padding-mini) var(--padding-21xl) 0;
-    gap: var(--gap-3xs);
-    z-index: 1;
-  }
-  .main-challenges-parent {
-    width: 980px;
-    padding: 0 0 var(--padding-7xs);
-    gap: var(--gap-22xl);
-    text-align: center;
-    font-size: var(--font-size-24xl);
-    color: var(--color-black);
-    font-family: var(--font-hammersmith-one);
-  }
-  .dinning-btn-child {
-    height: 59px;
-    width: 187px;
-    position: relative;
-    border-radius: var(--br-3xs);
-    background-color: var(--color-gainsboro);
-    display: none;
-  }
+
   .simulate2 {
-    flex: 1;
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--font-hammersmith-one);
-    color: var(--color-black);
-    text-align: left;
-    z-index: 1;
+    font-size: var(--font-size-lgi);
   }
-  .dinning-btn,
-  .dinning-btn-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    box-sizing: border-box;
-  }
-  .dinning-btn {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-sm) var(--padding-25xl) var(--padding-mini);
-    background-color: var(--color-gainsboro);
-    width: 187px;
-    border-radius: var(--br-3xs);
-    justify-content: flex-start;
-    z-index: 1;
-  }
-  .dinning-btn:hover {
-    background-color: var(--color-silver);
-  }
-  .dinning-btn-wrapper {
-    width: 982px;
-    justify-content: center;
-    padding: 0 3px 0 0;
-    max-width: 100%;
-  }
-  .dinning-rectangle-parent {
-    width: 100%;
-    position: relative;
-    background-color: var(--color-darkslategray);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: var(--padding-51xl) var(--padding-xl) 105px var(--padding-3xl);
-    box-sizing: border-box;
-    gap: var(--gap-22xl);
-    letter-spacing: normal;
-  }
-  @media screen and (max-width: 900px) {
-    .dining-philosophers-problem,
-    .main-challenges-in,
-    .what-is-dining {
-      font-size: var(--font-size-15xl);
-    }
-    .dining-philosophers-problem-i-wrapper {
-      padding-left: var(--padding-15xl);
-      padding-right: var(--padding-15xl);
-      box-sizing: border-box;
-    }
-    .how-we-can {
-      font-size: var(--font-size-15xl);
-    }
-    .how-we-can-solve-it-wrapper {
-      padding-left: var(--padding-15xl);
-      padding-right: var(--padding-15xl);
-      box-sizing: border-box;
-    }
-    .how-algorithm-work1 {
-      font-size: var(--font-size-15xl);
-    }
-  }
-  @media screen and (max-width: 700px) {
-    .dinning-rectangle-parent,
-    .main-challenges-parent {
-      gap: 20px 41px;
-    }
-  }
-  @media screen and (max-width: 450px) {
-    .what-is-dining {
-      font-size: var(--font-size-7xl);
-    }
-    .the-dining-philosophers-container {
-      font-size: var(--font-size-base);
-      line-height: 24px;
-    }
-    .main-challenges-in {
-      font-size: var(--font-size-7xl);
-    }
-    .the-main-challenge {
-      font-size: var(--font-size-base);
-      line-height: 24px;
-    }
-    .dining-philosophers-problem {
-      font-size: var(--font-size-7xl);
-    }
-    .deadlock-this-occurs-container {
-      font-size: var(--font-size-base);
-      line-height: 24px;
-    }
-    .how-we-can {
-      font-size: var(--font-size-7xl);
-    }
-    .mutexes-or-locks-container {
-      font-size: var(--font-size-base);
-      line-height: 24px;
-    }
-    .how-algorithm-work1 {
-      font-size: var(--font-size-7xl);
-    }
-    .initially-all-philosophers-container {
-      font-size: var(--font-size-base);
-      line-height: 24px;
-    }
-    .simulate2 {
-      font-size: var(--font-size-lgi);
-    }
-  }
-  
+}
