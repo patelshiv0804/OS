@@ -10,6 +10,10 @@ body {
 
 }
 
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content:hover {
+  display: block;
+}
 
 .navbar {
   background: #012846;
@@ -61,6 +65,31 @@ nav a:hover {
 
 nav a:hover:after {
   width: 100%;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  background-color: #081520;
+  min-width: 160px;
+  z-index: 2;
+  margin-top: 10px;
+  transition: opacity 1s ease-in-out;
+  /* Adjusted transition duration */
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #1868a7;
+  transition-duration: 0.1s;
 }
 
 .back-video {

@@ -175,7 +175,7 @@ label {
 }
 
 .LABEL_INPUT {
-    margin-top: 10PX;
+    margin-top: 15PX;
     font-size: 21PX;
 }
 
@@ -189,6 +189,7 @@ input[type="number"] {
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
+    border-radius: 4px;
 }
 
 button {
@@ -262,7 +263,7 @@ th {
 }
 
 .button-group {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #input table {

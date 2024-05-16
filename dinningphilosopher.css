@@ -295,9 +295,12 @@ h2 {
 }
 
 .content {
-  margin-top: 55px;
+  margin-top: 75px;
 }
 
+.content #sequenceForm {
+  margin-top: 20px;
+}
 
 .flex-item {
   /* flex: 1; */

@@ -190,7 +190,7 @@ button {
 
 .second {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .block {
@@ -205,6 +205,7 @@ button {
 }
 
 .page-entry {
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
