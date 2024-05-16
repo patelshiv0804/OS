@@ -2,54 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Process Scheduler Simulation</title>
-    <link rel="stylesheet" href="SjfStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Process Scheduler Simulation</title>
+  <link rel="stylesheet" href="SjfStyle.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <div class="navbar">
-        <nav>
-          <a class="hover" href="index.html">HOME</a>
-          <a class="hover" href="card.html">ABOUT</a>
-          <a class="hover" href="home.html">ALGORITHMS</a>
-          <div class="dropdown">
-            <a class="hover dropdown-toggle" href="#">SIMULATOR</a>
-            <ul class="dropdown-content">
-              <a class="drop" href="sjf.html">SJF</a>
-              <a class="drop" href="dinningphilosopher.html">DINNING PHILOSOPHER</a>
-              <a class="drop" href="disk.html">LOOK/C-LOOK</a>
-              <a class="drop" href="fifo.html">REPLACEMENT</a>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    <div class="container">
-        <video autoplay muted loop class="back-video">
-            <source src="bg_2.mp4" type="video/mp4">
-        </video>
-        <h1>Process Scheduler Simulation</h1>
-        <div class="LABEL_INPUT">
-            <label for="processes">Enter the number of processes:</label>
-            <input type="number" id="processes" min="1" max="1000">
-        </div>
-        <div id="input"></div>
-        <div id="output" style="margin-top: 10px;"></div> <!-- Output div added with margin-top -->
-        <div class="button-group" style="margin-top: 10px;"> <!-- Button group margin-top adjusted -->
-            <button onclick="getInput()">Submit</button>
-            <button onclick="startSimulation()" disabled id="std">Start Simulation</button>
-            <button onclick="clearData()">Clear Data</button>
-        </div>
-        <br>
-    </div>
 
-    <script src="SjfScript.js"></script>
+  <div class="navbar">
+    <nav>
+      <a class="hover" href="index.html">HOME</a>
+      <a class="hover" href="card.html">ABOUT</a>
+      <a class="hover" href="home.html">ALGORITHMS</a>
+      <div class="dropdown">
+        <a class="hover dropdown-toggle" href="#">SIMULATOR</a>
+        <ul class="dropdown-content">
+          <a class="drop" href="sjf.html">SJF</a>
+          <a class="drop" href="dinningphilosopher.html">DINNING PHILOSOPHER</a>
+          <a class="drop" href="disk.html">LOOK/C-LOOK</a>
+          <a class="drop" href="fifo.html">PAGE REPLACEMENT</a>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <video autoplay muted loop class="back-video">
+      <source src="bg_2.mp4" type="video/mp4">
+    </video>
+    <h1>Process Scheduler Simulation</h1>
+    <div class="LABEL_INPUT">
+      <label for="processes">Enter the number of processes:</label>
+      <input type="number" id="processes" min="1" max="1000">
+    </div>
+    <div id="input"></div>
+    <div id="output" style="margin-top: 10px;"></div> <!-- Output div added with margin-top -->
+    <div class="button-group" style="margin-top: 10px;"> <!-- Button group margin-top adjusted -->
+      <button onclick="getInput()">Submit</button>
+      <button onclick="startSimulation()" disabled id="std">Start Simulation</button>
+      <button onclick="clearData()">Clear Data</button>
+    </div>
+    <br>
+  </div>
+
+  <script src="SjfScript.js"></script>
 </body>
 
 </html>
